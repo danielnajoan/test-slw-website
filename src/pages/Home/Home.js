@@ -7,8 +7,6 @@ function Home() {
     <>
       <HomeCover {...coverObj}/>
       <Programs {...programsObj}/>
-      <Statistics {...statisticsObjOne} />
-      <Statistics {...statisticsObjTwo} />
       <Community {...communityObj}/>
       <Partner {...partnerObj}/>
       <Information {...infoObj}/>
