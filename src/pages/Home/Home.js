@@ -1,5 +1,5 @@
 import React, {memo} from 'react';
-import { coverObj, programsObj, statisticsObjOne, statisticsObjTwo, partnerObj, communityObj, infoObj } from './Data';
+import { coverObj, programsObj, partnerObj, communityObj, infoObj } from './Data';
 import { Statistics, Community, HomeCover, Information, Partner, Programs} from '../../components';
 
 function Home() {
