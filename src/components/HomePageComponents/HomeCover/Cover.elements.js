@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import coverImg from '../../../images/Background-1.png';
+import coverImg from '../../../images/Background-1.webp';
 
 export const CoverSec = styled.div`
   position: relative;
