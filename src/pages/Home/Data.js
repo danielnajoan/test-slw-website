@@ -5,9 +5,9 @@ import programImg3 from '../../images/Program-Img-3.png';
 import statisticsImg1 from '../../images/Statistics-Img-1.png';
 import statisticsImg2 from '../../images/Statistics-Img-2.png';
 
-import imageLogo from '../../images/test-logo.png';
+import imageLogo from '../../images/Mind Miracle Center.webp';
 
-import testIcon from '../../images/TestIcon.png';
+import communityIcon from '../../images/CommunityIcon.webp';
 
 import infoImg from '../../images/White.png';
 
@@ -86,7 +86,7 @@ export const communityObj = {
     cardsComData: [
         {
             id: 1,
-            imageUrl: testIcon, 
+            imageUrl: communityIcon, 
             imageName: 'test',
             link: 'https://www.instagram.com/selflovewarrior.id/', 
             cardTitle: 'Instagram', 
@@ -95,7 +95,7 @@ export const communityObj = {
         },
         {
             id: 2,
-            imageUrl: testIcon, 
+            imageUrl: communityIcon, 
             imageName: 'test',
             link: 'https://www.youtube.com/channel/UCxkUEZlfGOEntGoTnzxLq0w', 
             cardTitle: 'Youtube', 
@@ -104,7 +104,7 @@ export const communityObj = {
         },
         {
             id: 3,
-            imageUrl: testIcon, 
+            imageUrl: communityIcon, 
             imageName: 'test',
             link: '', 
             cardTitle: 'Discord', 
@@ -113,7 +113,7 @@ export const communityObj = {
         },
         {
             id: 4,
-            imageUrl: testIcon, 
+            imageUrl: communityIcon, 
             imageName: 'test',
             link: '', 
             cardTitle: 'Spotify', 

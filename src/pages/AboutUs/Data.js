@@ -1,4 +1,4 @@
-import authentic from '../../images/Authentic.png'
+import authentic from '../../images/Authentic.webp'
 import creative from '../../images/Creative.png'
 import impactful from '../../images/Impactful.png'
 

@@ -6,7 +6,6 @@ function Home() {
   return (
     <>
       <HomeCover {...coverObj}/>
-      <Programs {...programsObj}/>
       <Community {...communityObj}/>
       <Partner {...partnerObj}/>
       <Information {...infoObj}/>
