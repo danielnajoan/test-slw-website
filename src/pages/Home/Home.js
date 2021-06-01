@@ -8,7 +8,6 @@ function Home() {
       <HomeCover {...coverObj}/>
       <Dial {...dialObj}/>
       <Community {...communityObj}/>
-      <Partner {...partnerObj}/>
       <Information {...infoObj}/>
     </>
   );

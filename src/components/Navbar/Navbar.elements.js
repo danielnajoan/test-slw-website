@@ -95,7 +95,7 @@ export const NavLinks = styled(Link)`
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 115.2%;
   color: #3858CC;
   display: flex;
@@ -105,10 +105,9 @@ export const NavLinks = styled(Link)`
   height: 100%;
 
   @media screen and (max-width: 960px) {
-    text-align: center;
+    font-size: 26px;
     padding: 1rem;
     width: 100%;
-    display: table;
     color: #FF565E;
     text-align: left;
     &:hover {
