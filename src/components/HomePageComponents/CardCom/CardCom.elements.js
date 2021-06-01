@@ -1,4 +1,54 @@
 import styled from 'styled-components';
+import Carousel from "react-elastic-carousel";
+
+export const CarouselSection = styled(Carousel)`
+  .rec.rec-pagination {
+    visibility: hidden;
+    
+    @media screen and (max-width: 550px) {
+      visibility:visible;
+    }
+  }
+  /* square buttons */
+  .rec.rec-arrow {
+    border-radius: 0;
+    box-shadow: none;
+    border-radius: 50%;
+    background: #FFFFFF;
+  }
+  /* round buttons on hover */
+  .rec.rec-arrow:hover {
+    background-color: #002FA6;
+  }
+  /* pagination dot */
+  .rec.rec-dot{
+    @media screen and (max-width: 550px) {
+      width: 19px;
+      height: 19px;
+      box-shadow: none;
+      background: #FFFFFF;
+      border: 1px solid #8AA3FF;
+      box-sizing: border-box;
+    }
+  }
+  .rec.rec-dot.rec.rec-dot_active{
+    @media screen and (max-width: 550px) {
+      background: #B9C8FF;
+      border: 1px solid #8AA3FF;
+      box-sizing: border-box;
+    }
+  }
+  /* hide disabled buttons */
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+  /* disable default outline on focused items */
+  /* add custom outline on focused items */
+  .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
+  }
+`;
 
 export const CardSec = styled.div`
   width: 280px;
@@ -15,7 +65,7 @@ export const CardSec = styled.div`
   }
 
   @media screen and (max-width: 960px) {
-    width: 90%;
+    width: 100%;
 
     &:hover {
       transform: none;
@@ -30,6 +80,12 @@ export const CardInfo = styled.div`
   max-height: 25rem;
   align-items: center;
   text-align: center;
+
+`;
+
+export const CardImageContainer = styled.div`
+  height: 10rem;
+  padding: 0.5rem;
 `;
 
 export const CardIcon = styled.img`
@@ -37,9 +93,12 @@ export const CardIcon = styled.img`
     align-items: center;
     height: auto; 
     width: auto;
-    max-width: 220px; 
+    max-width: 150px;
     max-height: 350px;
-    padding: 0.5rem;
+    @media screen and (max-width: 550px) {
+      max-width: 160px; 
+      max-height: 250px;
+    }
 `;
 
 export const CardHeadline = styled.h3`
@@ -72,7 +131,6 @@ export const CardText = styled.p`
 `;
 
 export const CardButton = styled.a`
-
   text-decoration: none;
   margin-top: 1rem;
 `;

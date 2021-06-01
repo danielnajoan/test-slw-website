@@ -1,8 +1,7 @@
 export { default as Navbar } from './Navbar/Navbar';
 export { default as Footer } from './Footer/Footer';
 export { default as HomeCover } from './HomePageComponents/HomeCover/Cover';
-export { default as Programs } from './HomePageComponents/Programs/Programs';
-export { default as Statistics } from './HomePageComponents/Statistics/Statistics';
+export { default as Dial } from './HomePageComponents/Dial/Dial';
 export { default as Community } from './HomePageComponents/Community/Community';
 export { default as Information } from './HomePageComponents/Information/Information';
 export { default as Partner } from './HomePageComponents/Partner/Partner';

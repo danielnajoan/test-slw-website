@@ -1,6 +1,5 @@
 import React, {memo, useState}from 'react';
 import { Container, Button3 } from '../../../globalStyles';
-
 import {
     BaseSection,
     ImageContainer,

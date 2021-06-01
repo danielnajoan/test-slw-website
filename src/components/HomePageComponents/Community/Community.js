@@ -1,27 +1,27 @@
-import React, { useState, memo } from 'react';
+import React, { memo, useState } from 'react';
 import CardCom from '../CardCom/CardCom';
 import {
     BaseSection,
-    Wrapper,
+    Container,
     Headline,
     Subheadline,
-    CardContainer,
+    Wrapper,
 } from './Community.elements';
-//import { FaInstagram, FaYoutube, FaDiscord, FaSpotify } from 'react-icons/fa';
 
-function Community({headline, subheadline, cardsComData}) {
+
+const Community = ({ headline, subheadline, cardsComData }) => {
     const [cardData] = useState(cardsComData);
 
     return (
         <>
             <BaseSection>
-                <Wrapper>
-                <Headline>{headline}</Headline>
-                <Subheadline>{subheadline}</Subheadline>
-                <CardContainer>
-                    <CardCom cards={cardData}/>
-                </CardContainer>
-                </Wrapper>
+                <Container>
+                    <Wrapper>
+                        <Headline>{headline}</Headline>
+                        <Subheadline>{subheadline}</Subheadline>
+                        <CardCom cards={cardData}/>
+                    </Wrapper>
+                </Container>
             </BaseSection>
         </>
     )

@@ -1,11 +1,12 @@
 import React, {memo} from 'react';
-import { coverObj, partnerObj, communityObj, infoObj } from './Data';
-import { Community, HomeCover, Information, Partner} from '../../components';
+import { coverObj, dialObj, communityObj, partnerObj, infoObj } from './Data';
+import { Community, Dial, HomeCover, Information, Partner} from '../../components';
 
 function Home() {
   return (
     <>
       <HomeCover {...coverObj}/>
+      <Dial {...dialObj}/>
       <Community {...communityObj}/>
       <Partner {...partnerObj}/>
       <Information {...infoObj}/>

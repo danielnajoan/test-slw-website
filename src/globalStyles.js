@@ -112,6 +112,13 @@ export const Button4 = styled.button`
   outline: none;
   cursor: pointer;
 
+  &:hover {
+    box-sizing: border-box;
+    background-color: ${({ primary }) => (primary ? 'transparent' : 'none')};
+    color: ${({ colLabel }) => (colLabel ? '#6C8FFF' : 'none')};
+    border: ${({ btnBorder }) => (btnBorder ? '2px solid #6C8FFF' : 'none')};
+    padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : 'none'))};
+  }
   @media screen and (max-width: 960px) {
     width: 100%;
   }

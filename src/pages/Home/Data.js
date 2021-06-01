@@ -1,13 +1,9 @@
-import programImg1 from '../../images/Program-Img-1.png';
-import programImg2 from '../../images/Program-Img-2.png';
-import programImg3 from '../../images/Program-Img-3.png';
-
-import statisticsImg1 from '../../images/Statistics-Img-1.png';
-import statisticsImg2 from '../../images/Statistics-Img-2.png';
-
 import imageLogo from '../../images/Mind Miracle Center.webp';
 
-import communityIcon from '../../images/CommunityIcon.webp';
+import discordIcon from '../../images/Discord Icon.png';
+import spotifyIcon from '../../images/Spotify Icon.png';
+import instagramIcon from '../../images/Instagram Icon.png';
+import youtubeIcon from '../../images/Youtube Icon.png';
 
 import infoImg from '../../images/White.png';
 
@@ -17,67 +13,8 @@ export const coverObj = {
   buttonLabel: 'Get Involed',
 };
 
-export const programsObj = {
-    headline:'What do we do?', 
-    subtitle:'We help youths and young adults across Indonesia through engaging programs to build a healthy self-love.',
-    cardsProgData: [
-        {
-            id: 1,
-            imgUrl: programImg1, 
-            alt: 'Program-Img-1',
-            width:'183', 
-            height:'160',
-            cardTitle: 'Creative Content', 
-            cardTextDesc: 'Bringing light to interesting topics',
-            buttonLabel: 'Learn more',
-        },
-        {
-            id: 2,
-            imgUrl: programImg2, 
-            alt: 'Program-Img-2',
-            width:'191', 
-            height:'144',
-            cardTitle: 'Bootcamp and Support Group', 
-            cardTextDesc: 'Bringing light to interesting topics',
-            buttonLabel: 'Learn more',
-        },
-        {
-            id: 3,
-            imgUrl: programImg3, 
-            alt: 'Program-Img-3',
-            width:'169', 
-            height:'151',
-            cardTitle: 'International Webinars', 
-            cardTextDesc: 'Bringing light to interesting topics',
-            buttonLabel: 'Learn more',
-        }]
-};
-
-export const statisticsObjOne = {
-    headline: 'Why should you care?',
-    colPosition: false,
-    textAlign: true,
-    colPadding: true,
-    heading: '20% teens experience depression before adulthood',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    start: false,
-    imgUrl: statisticsImg1,
-    alt: 'Statistics-Img-1',
-    width:'400',
-    height:'465',
-}
-export const statisticsObjTwo = {
-    headline: '',
-    colPosition: true,
-    textAlign: false,
-    colPadding: false,
-    heading: 'Teens with low self-esteem are 4 times more likely to engage in risky behaviours',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-    start: true,
-    imgUrl: statisticsImg2,
-    alt: 'Statistics-Img-2',
-    width:'384',
-    height:'381',
+export const dialObj = {
+    headline: 'Feeling lonely? Dial 1-800-SLW on Spotify..'
 }
 
 export const communityObj = {
@@ -86,39 +23,39 @@ export const communityObj = {
     cardsComData: [
         {
             id: 1,
-            imageUrl: communityIcon, 
-            imageName: 'test',
+            imageUrl: instagramIcon, 
+            imageName: 'instagramIcon',
             link: 'https://www.instagram.com/selflovewarrior.id/', 
             cardTitle: 'Instagram', 
-            cardTextDesc: 'Follow SLW to learn about mental health issues, join IG Live sessions, and get the newest updates.',
-            buttonLabel: 'Follow Instagram',
+            cardTextDesc: 'Learn more about mental health and self-love through visual contents.',
+            buttonLabel: 'Follow Us',
         },
         {
             id: 2,
-            imageUrl: communityIcon, 
-            imageName: 'test',
+            imageUrl: youtubeIcon, 
+            imageName: 'youtubeIcon',
             link: 'https://www.youtube.com/channel/UCxkUEZlfGOEntGoTnzxLq0w', 
             cardTitle: 'Youtube', 
-            cardTextDesc: 'Watch SLW’s international webinars, tea-time, and original video productions.',
-            buttonLabel: 'Subscribe Youtube',
+            cardTextDesc: 'Watch our previous webinars and fun tea times again!',
+            buttonLabel: 'VIsit Youtube',
         },
         {
             id: 3,
-            imageUrl: communityIcon, 
-            imageName: 'test',
-            link: '', 
+            imageUrl: discordIcon, 
+            imageName: 'discordIcon',
+            link: 'https://discord.gg/HTmgtMWp8T', 
             cardTitle: 'Discord', 
-            cardTextDesc: 'Join SLW’s safe space by interacting in BookClub, Rants, Calming Exercises, and many more.',
+            cardTextDesc: 'Join SLW’s safe space and interact in Book club, Rants, Calming Exercises, and more.',
             buttonLabel: 'Join Discord',
         },
         {
             id: 4,
-            imageUrl: communityIcon, 
-            imageName: 'test',
-            link: '', 
+            imageUrl: spotifyIcon, 
+            imageName: 'spotifyIcon',
+            link: 'https://open.spotify.com/show/1v57eiSx5t85YRkORxKiEN', 
             cardTitle: 'Spotify', 
-            cardTextDesc: 'Tune in to SLW’s audio bytes and podcast to discuss about mental health & lifestyles with professionals.',
-            buttonLabel: 'Follow Spotify',
+            cardTextDesc: 'Listen to a heartwarming track or insightful discussions on mental health issues.',
+            buttonLabel: 'Listen Now',
         },
     ]
 };
