@@ -1,5 +1,6 @@
 import React, {memo, useState}from 'react';
 import { Container, Button3 } from '../../../globalStyles';
+
 import {
     BaseSection,
     ImageContainer,
@@ -15,7 +16,7 @@ import {
     ButtonLink,
   } from './GetInvolvedCover.elements';
 
-const GetInvolvedCover = ({ headline, subheadline,getInvolvedsData }) => {
+const GetInvolvedCover = ({ headline, subheadline, getInvolvedsData }) => {
     const [cards] = useState(getInvolvedsData);
     return (
         <>
@@ -30,13 +31,13 @@ const GetInvolvedCover = ({ headline, subheadline,getInvolvedsData }) => {
                     </Header>
                     <CardContainer>
                     {cards.map((getInvolvedData) => {
-                    const { id, backgroundColor, titleColor, cardTitle, descColor, cardDesc, url, btnTheme, buttonLabel } = getInvolvedData;
+                    const { id, backgroundColor, titleColor, cardTitle, descColor, cardDesc, path, btnTheme, buttonLabel } = getInvolvedData;
                     return (
                         <CardSec key={id} backgroundColor={backgroundColor}>
                             <CardInfo>
                                 <CardHeadline color={titleColor}>{cardTitle}</CardHeadline>
                                 <CardDesc color={descColor}>{cardDesc}</CardDesc>
-                                <ButtonLink href={url}>
+                                <ButtonLink to={path}>
                                     <Button3 primary={btnTheme} colLabel={btnTheme} btnBorder={btnTheme} btnPadding={btnTheme} fontSize={btnTheme}>
                                     {buttonLabel}
                                     </Button3>

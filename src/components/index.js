@@ -12,3 +12,6 @@ export { default as OurStory } from './AboutUsComponents/OurStory/OurStory';
 export { default as ContactForm } from './ContactUsComponents/ContactForm/ContactForm';
 export { default as InfoPartner } from './ContactUsComponents/InfoPartner/InfoPartner';
 export { default as GetInvolvedCover } from './GetInvolvedComponents/GetInvolvedCover/GetInvolvedCover';
+export { default as VolunteerCover } from './GetInvolvedComponents/VolunteerComponents/VolunteerCover/VolunteerCover';
+export { default as Recruitment } from './GetInvolvedComponents/VolunteerComponents/Recruitment/Recruitment';
+export { default as PastVolunteer } from './GetInvolvedComponents/VolunteerComponents/PastVolunteer/PastVolunteer';

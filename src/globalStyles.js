@@ -57,7 +57,7 @@ export const Button2 = styled.button`
   padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : 'none'))};
   font-size: ${({ fontSize }) => (fontSize ? '18px' : 'none')};
   border-radius: 100px;
-  width: 200px;
+  width: ${({ width }) => (width ? '200px' : 'auto')};
   white-space: nowrap;
   outline: none;
   cursor: pointer;

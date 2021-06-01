@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const BaseSection = styled.div`
     padding: 160px 0;
-    background: #fff;
+    background: #FFFFFF;
 `;
 
 export const ImageContainer = styled.div`
@@ -104,6 +105,6 @@ export const CardDesc = styled.div`
     margin-bottom: 2rem;
 `;
 
-export const ButtonLink = styled.a`
+export const ButtonLink = styled(Link)`
     margin-bottom: 2rem;
 `;

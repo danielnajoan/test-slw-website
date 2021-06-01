@@ -31,7 +31,7 @@ const OurStory = ({ headerTitle, headline, paragraph1,paragraph2, paragraph3, bt
                     <ViewTeam>
                         <ButtonHeadline>{btnHeadline}</ButtonHeadline>
                         <Link to='/'>
-                            <Button2 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
+                            <Button2 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true} width={false}>
                             {buttonLabel}
                             </Button2>
                         </Link>
