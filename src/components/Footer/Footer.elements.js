@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
   background-color: #000060;//kalo pake warna ini lebih bagus-> #101522
-  padding: 4rem 0 2rem 0;
+  padding: 4rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,29 +15,19 @@ export const FooterLinksContainer = styled.div`
   max-width: 1000px;
   display: flex;
   justify-content: center;
-
-  @media screen and (max-width: 820px) {
-    padding-top: 32px;
-  }
 `;
 
 export const FooterLinksWrapper = styled.div`
-  display: flex;
-  width: 50%;
-  padding-left: ${({ pad }) => (pad ? '64px' : '0px')};
+  width: 100%;
+  padding: 0px 64px;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
-    padding-left: ${({ pad }) => (pad ? '64px' : '64px')};
   }
 `;
 
 export const FooterLinkItems = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 16px;
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
   color: #fff;
 
@@ -52,12 +43,15 @@ export const FooterLinkTitle = styled.h2`
   font-size: 25px;
 `;
 
-export const FooterLink = styled.p`
+export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   padding: 0.5rem;
-  width: 85%;
-  word-wrap: break-word;
+  width: 100%;
+  @media screen and (max-width: 420px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const WebsiteRights = styled.small`
@@ -66,6 +60,7 @@ export const WebsiteRights = styled.small`
 `;
 
 export const SocialIcons = styled.div`
+  margin-top: 2rem;
   /* display: flex;
   justify-content: space-between;
   align-items: center;

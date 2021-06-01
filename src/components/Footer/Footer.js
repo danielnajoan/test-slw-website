@@ -10,7 +10,6 @@ import {
   FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
-  FooterLinkTitle,
   FooterLink,
   WebsiteRights,
   SocialIcons,
@@ -21,17 +20,13 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterLinksContainer>
-        <FooterLinksWrapper pad={false}>
+        <FooterLinksWrapper >
           <FooterLinkItems>
-            <FooterLinkTitle>About Self Love Warrior Indonesia</FooterLinkTitle>
-            <FooterLink to='/'>A community that creates a safe space and raises an awareness about mental health issues in Indonesia</FooterLink>
-          </FooterLinkItems>
-        </FooterLinksWrapper>
-        <FooterLinksWrapper pad={true}>
-          <FooterLinkItems>
-            <FooterLink to='/'>About Us</FooterLink>
-            <FooterLink to='/'>Our Program</FooterLink>
-            <FooterLink to='/'>Collaborate with Us</FooterLink>
+            <FooterLink to='/'>Home</FooterLink>
+            <FooterLink to='/about-us'>About Us</FooterLink>
+            <FooterLink to='/community'>Our Community</FooterLink>
+            <FooterLink to='/get-involved'>Get Involved</FooterLink>
+            <FooterLink to='/contact-us'>Contact Us</FooterLink>
               <SocialIcons>
                 <SocialIconLink href={
                     '//www.instagram.com/selflovewarrior.id/'
@@ -49,14 +44,22 @@ function Footer() {
                   aria-label='Youtube'>
                   <FaYoutube />
                 </SocialIconLink>
-                <SocialIconLink href='/' target='_blank' aria-label='Discord'>
+                <SocialIconLink href={
+                    '//discord.gg/HTmgtMWp8T'
+                  } 
+                target='_blank' 
+                aria-label='Discord'>
                   <FaDiscord />
                 </SocialIconLink>
-                <SocialIconLink href='/' target='_blank' aria-label='Spotify'>
+                <SocialIconLink href={
+                    'open.spotify.com/show/1v57eiSx5t85YRkORxKiEN'
+                  } 
+                target='_blank' 
+                aria-label='Spotify'>
                   <FaSpotify />
                 </SocialIconLink>
               </SocialIcons>
-            <WebsiteRights  teRights>© 2010 — 2021 Privacy-Terms</WebsiteRights>
+            <WebsiteRights  teRights>© Self Love Warrior 2021</WebsiteRights>
           </FooterLinkItems>
         </FooterLinksWrapper>
       </FooterLinksContainer>

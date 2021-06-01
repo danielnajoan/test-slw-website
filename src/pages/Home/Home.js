@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
-import { coverObj, dialObj, communityObj, partnerObj, infoObj } from './Data';
-import { Community, Dial, HomeCover, Information, Partner} from '../../components';
+import { coverObj, dialObj, communityObj, infoObj } from './Data';
+import { Community, Dial, HomeCover, Information } from '../../components';
 
 function Home() {
   return (
