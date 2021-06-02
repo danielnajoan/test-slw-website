@@ -23,6 +23,7 @@ export const Subtitle = styled.h2`
     color: #3A2A2A;
     margin-bottom: 2rem;
 `;
+
 export const CardContainer = styled.div`
     display: flex;
     flex-wrap: wrap;

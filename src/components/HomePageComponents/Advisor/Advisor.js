@@ -11,7 +11,7 @@ import {
     Redirect,
 } from './Advisor.elements';
 
-const Advisor = ({ headline, imageUrl, imageName, imageTitle, description, buttonLabel }) => {
+const Advisor = ({ headline, imageUrl, imageName, imageTitle, description, urlButton, buttonLabel }) => {
     return (
         <>
             <BaseSection>
@@ -26,7 +26,7 @@ const Advisor = ({ headline, imageUrl, imageName, imageTitle, description, butto
                     <Wrapper> 
                         <Description>{description}</Description>
                     </Wrapper>
-                    <Redirect>
+                    <Redirect href={urlButton}>
                         <Button6 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
                         {buttonLabel}
                         </Button6>

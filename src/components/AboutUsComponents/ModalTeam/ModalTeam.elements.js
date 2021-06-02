@@ -10,9 +10,6 @@ export const CardBaseSection = styled.div`
     @media screen and (max-width: 550px) {
         height: 200px;
         display: block;
-        &:hover {
-        transform: none;
-        }
     }
 `;
 

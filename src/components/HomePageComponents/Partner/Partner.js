@@ -1,21 +1,18 @@
 import React, { useState, memo } from 'react';
-import { Link } from 'react-router-dom';
-import { Button3, Container } from '../../../globalStyles';
-import CardPartner from '../CardPartner/CardPartner';
+import { Container } from '../../../globalStyles';
 import {
     BaseSection,
     Wrapper,
     Headline,
     CardContainer,
-    CarouselSec,
+    CardBaseSection,
+    ImageContainer,
+    CardImage,
 } from './Partner.elements';
 
-const breakPoints = [
-    { itemsToShow: 5 },
-  ];
 
-const Partner = ({ headline, buttonLabel, partnerLogo }) => {
-    const [cardData] = useState(partnerLogo);
+const Partner = ({ headline, partnerLogo }) => {
+    const [cards] = useState(partnerLogo);
     return (
         <>
             <BaseSection>
@@ -23,20 +20,17 @@ const Partner = ({ headline, buttonLabel, partnerLogo }) => {
                     <Wrapper>
                         <Headline>{headline}</Headline>
                         <CardContainer>
-                            {/* <CarouselSec breakPoints={breakPoints}>
-                            {cardData.map((cardData) => {
+                            {cards.map((cardData) => {
                                 const { id, imageUrl, logoName } = cardData;
-                                return(
-                                    <CardPartner id={id} imageUrl={imageUrl} logoName={logoName}/>
-                                    );
-                                })}   
-                            </CarouselSec> */}
+                                return (
+                                    <CardBaseSection key={id}>
+                                        <ImageContainer>
+                                            <CardImage  src={imageUrl} alt={logoName}></CardImage>
+                                        </ImageContainer>
+                                    </CardBaseSection>
+                                );
+                            })}
                         </CardContainer>
-                        <Link to='/'>
-                            <Button3 primary={true} colLabel={true} btnBorder={false} btnPadding={true} fontSize={true}>
-                            {buttonLabel}
-                            </Button3>
-                        </Link>
                     </Wrapper>
                 </Container>
             </BaseSection>

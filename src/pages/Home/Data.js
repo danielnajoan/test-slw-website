@@ -120,6 +120,7 @@ export const advisorObj = {
     imageName: 'Mind Miracle Center',
     imageTitle: 'Mind Miracle Center',
     description: 'Mind Miracle Center is a family hypnotherapy center located in South Jakarta.',
+    urlButton: 'https://mindmiraclecenter.com',
     buttonLabel: 'Learn More',
 }
 

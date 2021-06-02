@@ -46,14 +46,16 @@ function Footer() {
                 </SocialIconLink>
                 <SocialIconLink href={
                     '//discord.gg/HTmgtMWp8T'
-                  } 
+                  }
+                rel='noopener noreferrer'
                 target='_blank' 
                 aria-label='Discord'>
                   <FaDiscord />
                 </SocialIconLink>
                 <SocialIconLink href={
                     'open.spotify.com/show/1v57eiSx5t85YRkORxKiEN'
-                  } 
+                  }
+                rel='noopener noreferrer'
                 target='_blank' 
                 aria-label='Spotify'>
                   <FaSpotify />
