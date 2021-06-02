@@ -21,6 +21,9 @@ export const Headline = styled.h1`
     color: #3858CC;
     margin-bottom: 1rem;
     width: 50%;
+    @media screen and (max-width: 550px) {
+        width: 100%;
+    }
 `;
 
 export const UnderlineContainer = styled.div`
@@ -46,4 +49,7 @@ export const Paragraph = styled.p`
     line-height: 33px;
     color: #5F71AC;
     width: 50%;
+    @media screen and (max-width: 550px) {
+        width: 100%;
+    }
 `;

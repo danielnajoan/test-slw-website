@@ -23,4 +23,7 @@ export const ImageContainer = styled.div`
 
 export const FrameSection = styled.div`
     width: 50%;
+    @media screen and (max-width: 550px) {
+        width: 100%;
+    }
 `;
