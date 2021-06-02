@@ -30,7 +30,7 @@ const OurStory = ({ headerTitle, headline, paragraph1,paragraph2, paragraph3, bt
                     <StoryParagraph>{paragraph3}</StoryParagraph>
                     <ViewTeam>
                         <ButtonHeadline>{btnHeadline}</ButtonHeadline>
-                        <Link to='/'>
+                        <Link to='/team'>
                             <Button2 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true} width={false}>
                             {buttonLabel}
                             </Button2>

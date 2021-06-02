@@ -2,10 +2,11 @@ import React, {memo} from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Button3 } from '../../../globalStyles';
 import {
-  CoverSec,
-  CoverColumn,
+  BaseSection,
+  BaseCover,
+  Column,
   TextWrapper,
-  Heading,
+  Headline,
   Subtitle,
 } from './Cover.elements';
 
@@ -16,11 +17,12 @@ function Cover({
 }) {
   return (
     <>
-      <CoverSec>
+      <BaseSection>
+        <BaseCover>
           <Container>
-              <CoverColumn>
+              <Column>
                 <TextWrapper>
-                  <Heading>{headline}</Heading>
+                  <Headline>{headline}</Headline>
                   <Subtitle>{description}</Subtitle>
                   <Link to='/'>
                     <Button3 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
@@ -28,9 +30,10 @@ function Cover({
                     </Button3>
                   </Link>
                 </TextWrapper>
-              </CoverColumn>
+              </Column>
           </Container>
-      </CoverSec>
+        </BaseCover>
+      </BaseSection>
     </>
   );
 }

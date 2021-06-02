@@ -22,14 +22,14 @@ const Partner = ({ headline, buttonLabel, partnerLogo }) => {
                 <Wrapper>
                     <Headline>{headline}</Headline>
                     <CardContainer>
-                        <CarouselSec breakPoints={breakPoints}>
+                        {/* <CarouselSec breakPoints={breakPoints}>
                         {cardData.map((cardData) => {
                             const { id, imageUrl, logoName } = cardData;
                             return(
                                 <CardPartner id={id} imageUrl={imageUrl} logoName={logoName}/>
                                 );
                             })}   
-                        </CarouselSec>
+                        </CarouselSec> */}
                     </CardContainer>
                     <Link to='/'>
                         <Button3 primary={true} colLabel={true} btnBorder={false} btnPadding={true} fontSize={true}>

@@ -53,11 +53,10 @@ export const CarouselSection = styled(Carousel)`
 export const CardSec = styled.div`
   width: 280px;
   height: 400px;
-  border-radius: 4px;
   margin: 12px;
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
   box-shadow: 0px 4.72398px 16.5339px rgba(0, 0, 0, 0.25);
-  border-radius: 29.5249px;
+  border-radius: 30px;
 
   &:hover {
     transform: scale(1.06);

@@ -1,5 +1,4 @@
 import React, {memo} from 'react';
-import { Link } from 'react-router-dom';
 import { Button4 } from '../../../globalStyles';
 import {
     CarouselSection,
@@ -37,11 +36,9 @@ const CardCom = ({ cards }) => {
                             <CardDesc>
                                 <CardText>{cardTextDesc}</CardText>
                                 <CardButton href={link}>
-                                    <Link to='/'>
                                     <Button4 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
                                         {buttonLabel}
                                     </Button4>
-                                    </Link>
                                 </CardButton>
                             </CardDesc>
                         </CardInfo>

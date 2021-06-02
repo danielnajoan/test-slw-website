@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const BaseSection = styled.div`
-    padding: 160px 0;
+    padding: 100px 0;
     background: #FFFFFF;
     align-items: center;
     text-align: center;
@@ -17,5 +17,10 @@ export const Headline = styled.h1`
     margin-bottom: 2rem;
 `;
 export const ImageContainer = styled.div`
+    justify-content: center;
+    display: flex;
+`;
 
+export const FrameSection = styled.div`
+    width: 50%;
 `;

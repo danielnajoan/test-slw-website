@@ -74,7 +74,7 @@ export const Button2 = styled.button`
     width: 100%;
   }
 `;
-//For Information Section
+//For Cover Section
 export const Button3 = styled.button`
   font-family: Nunito;
   font-style: normal;
@@ -121,6 +121,60 @@ export const Button4 = styled.button`
   }
   @media screen and (max-width: 960px) {
     width: 100%;
+  }
+`;
+
+//For Information Section
+export const Button5 = styled.button`
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 135.94%;
+  background-color: ${({ primary }) => (primary ? '#FFFFFF' : 'transparent')};
+  color: ${({ colLabel }) => (colLabel ? '#1B3EBC' : '#FFFFFF')};
+  border: ${({ btnBorder }) => (btnBorder ? '2px solid #FFFFFF' : '2px solid #FFFFFF')};
+  padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : '10px 34px'))};
+  font-size: ${({ fontSize }) => (fontSize ? '18px' : '18px')};
+  border-radius: 100px;
+  width: 250px;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    box-sizing: border-box;
+    background-color: ${({ primary }) => (primary ? '#1B3EBC' : '#FFFFFF')};
+    color: ${({ colLabel }) => (colLabel ? '#FFFFFF' : '#1B3EBC')};
+    border: ${({ btnBorder }) => (btnBorder ? '2px solid #1B3EBC' : '2px solid #FFFFFF')};
+    padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : '10px 34px'))};
+  }
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
+//For Advisor Section
+export const Button6 = styled.button`
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 135.94%;
+  background-color: ${({ primary }) => (primary ? 'transparent' : 'none')};
+  color: ${({ colLabel }) => (colLabel ? '#3858CC' : 'none')};
+  border: ${({ btnBorder }) => (btnBorder ? '2px solid #3858CC' : 'none')};
+  padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : 'none'))};
+  font-size: ${({ fontSize }) => (fontSize ? '18px' : 'none')};
+  border-radius: 100px;
+  width: 220px;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${({ primary }) => (primary ? '#5373E3' : 'none')};
+    color: ${({ colLabel }) => (colLabel ? '#FFFFFF' : 'none')};
+    border: ${({ btnBorder }) => (btnBorder ? '2px solid #5373E3' : 'none')};
+    padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : 'none'))};
   }
 `;
 export default GlobalStyle;

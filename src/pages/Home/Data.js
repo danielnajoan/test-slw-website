@@ -7,11 +7,20 @@ import youtubeIcon from '../../images/Youtube Icon.png';
 
 import infoImg from '../../images/White.png';
 
+import advisorLogo from '../../images/Mind Miracle Center.png';
+
+import loveLogo from '../../images/Love.png';
+
 export const coverObj = {
-  headline: 'Self Love Warrior Indonesia',
-  description: 'Spreading mental health awaraness and self-love in Indonesia.',
-  buttonLabel: 'Get Involed',
+  headline: 'Do you want to start loving yourself?',
+  description: 'Your self-love journey starts here.',
+  buttonLabel: 'Let’s Go!',
 };
+
+export const greetObj = {
+    headline: 'Hi, there! Nice to meet you.',
+    paragraph: 'We are a youth-based organization raising awareness on self-love and mental health in Indonesia since 2018.',
+}
 
 export const dialObj = {
     headline: 'Feeling lonely? Dial 1-800-SLW on Spotify..'
@@ -103,4 +112,18 @@ export const infoObj = {
     buttonLabel2: 'Join Our Newsletter',
     imageUrl: infoImg,
     imageName: 'Image',
+}
+
+export const advisorObj = {
+    headline: 'Our Official Advisor',
+    imageUrl: advisorLogo,
+    imageName: 'Mind Miracle Center',
+    imageTitle: 'Mind Miracle Center',
+    description: 'Mind Miracle Center is a family hypnotherapy center located in South Jakarta.',
+    buttonLabel: 'Learn More',
+}
+
+export const motivateObj = {
+    imageUrl: loveLogo,
+    imageName: 'loveLogo',
 }
