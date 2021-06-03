@@ -103,6 +103,7 @@ export const Button3 = styled.button`
   }
 `;
 
+//For Card Community in HomePage
 export const Button4 = styled.button`
   font-family: Poppins;
   font-style: normal;
@@ -128,6 +129,10 @@ export const Button4 = styled.button`
   }
   @media screen and (max-width: 960px) {
     width: 100%;
+  }
+  @media screen and (max-width: 320px) {
+    font-size:0.7rem;
+    padding: 0.05rem;
   }
 `;
 

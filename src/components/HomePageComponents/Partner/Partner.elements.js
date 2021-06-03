@@ -16,10 +16,13 @@ export const Headline = styled.h1`
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 172.3%;
     letter-spacing: 0.02em;
     color: #091F6B;
+    @media screen and (max-width: 550px) { 
+        font-size: 2rem;
+    }
 `;
 
 export const CardContainer = styled.div`
@@ -63,7 +66,9 @@ export const CardImage = styled.img`
       0 6.7px 5.3px rgba(0, 0, 0, 0.048),
       0 12.5px 10px rgba(0, 0, 0, 0.06);
     @media screen and (max-width: 550px) { 
-      max-width: 80px; 
-      max-height: 160px;
+      max-width: 80px;
+    }
+    @media screen and (max-width: 320px) { 
+      max-width: 60px;
     }
 `;

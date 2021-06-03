@@ -52,7 +52,7 @@ export const CarouselSection = styled(Carousel)`
 
 export const CardSec = styled.div`
   width: 280px;
-  height: 400px;
+  padding: 2rem;
   margin: 12px;
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
   box-shadow: 0px 4.72398px 16.5339px rgba(0, 0, 0, 0.25);
@@ -65,10 +65,10 @@ export const CardSec = styled.div`
 
   @media screen and (max-width: 960px) {
     width: 100%;
-
-    &:hover {
-      transform: none;
-    }
+    padding: 1rem;
+  }
+  @media screen and (max-width: 320px) {
+    padding: 0.5rem;
   }
 `;
 
@@ -83,8 +83,14 @@ export const CardInfo = styled.div`
 `;
 
 export const CardImageContainer = styled.div`
-  height: 10rem;
-  padding: 0.5rem;
+    height: 10rem;
+    padding: 0.5rem;
+    @media screen and (max-width: 550px) {
+      height: 8rem;
+    }
+    @media screen and (max-width: 320px) {
+      height: 6rem;
+    }
 `;
 
 export const CardIcon = styled.img`
@@ -95,8 +101,10 @@ export const CardIcon = styled.img`
     max-width: 150px;
     max-height: 350px;
     @media screen and (max-width: 550px) {
-      max-width: 160px; 
-      max-height: 250px;
+      max-width: 120px;
+    }
+    @media screen and (max-width: 320px) {
+      max-width: 90px;
     }
 `;
 
@@ -104,12 +112,20 @@ export const CardHeadline = styled.h3`
   font-family: Nunito;
   font-style: normal;
   font-weight: 800;
-  font-size: 23.6199px;
+  font-size: 1.5rem;
   line-height: 32px;
   color: #091F6B;
   letter-spacing: 0.01em;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  @media screen and (max-width: 550px) {
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 320px) {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
 `;
 export const CardDesc = styled.div`
   width: 90%;
@@ -117,16 +133,26 @@ export const CardDesc = styled.div`
   list-style: none;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
 `;
 
 export const CardText = styled.p`
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 135.94%;
   height: 5rem;
   word-wrap: break-word;
+  @media screen and (max-width: 550px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 320px) {
+    height: 3rem;
+    font-size: 0.6rem;
+  }
 `;
 
 export const CardButton = styled.a`
