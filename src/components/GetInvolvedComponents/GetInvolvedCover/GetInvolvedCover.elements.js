@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const BaseSection = styled.div`
-    padding: 160px 0;
+    padding: 60px 0;
     background: #FFFFFF;
 `;
 
@@ -47,16 +47,16 @@ export const CardContainer = styled.div`
     align-items: center;
 
     @media screen and (max-width: 960px) {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
     }
 `;
 
 
 export const CardSec = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: 22rem;
     padding: 5rem 2rem;
@@ -64,8 +64,13 @@ export const CardSec = styled.div`
     border-radius: 20px;
     background-color: ${props => props.backgroundColor};
     @media screen and (max-width: 960px) {
-        width: 90%;
-
+        width: 50%;
+        height: 20rem;
+        padding: 1rem 1rem;
+    }
+    @media screen and (max-width: 550px) {
+        width: 100%;
+        height: 18rem;
     }
 `;
 
@@ -73,7 +78,6 @@ export const CardInfo = styled.div`
     display: flex;
     flex-direction: column;
     width: auto;
-    max-height: 25rem;
     align-items: center;
     text-align: center;
     @media screen and (max-width: 960px) {
@@ -83,26 +87,36 @@ export const CardInfo = styled.div`
 `;
 
 
-export const CardHeadline = styled.div`
+export const CardHeadline = styled.h1`
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 44px;
-    color: ${({ color }) => (color ? '#091F6B' : '#FFFFFF')};
+    color: ${({ colorHeadline }) => (colorHeadline ? '#091F6B' : '#FFFFFF')};
     margin-bottom: 1rem;
+    @media screen and (max-width: 550px) {
+        font-size: 1.5rem;
+    }
 `;
 
-export const CardDesc = styled.div`
+export const CardDesc = styled.p`
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.01em;
-    color: ${({ color }) => (color ? '#2F3E72' : '#FFFFFF')};
+    color: ${({ colorDesc }) => (colorDesc ? '#2F3E72' : '#FFFFFF')};
     margin-bottom: 2rem;
+    @media screen and (max-width: 550px) {
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
 `;
 
 export const ButtonLink = styled(Link)`

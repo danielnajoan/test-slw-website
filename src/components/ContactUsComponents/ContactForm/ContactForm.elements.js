@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 export const BaseSection = styled.div`
-    padding: 160px 0;
+    padding: 160px 0px;
     background: #fff;
+    @media screen and (max-width: 320px) {
+        padding: 80px 0px;
+    }
 `;
 
 export const Headline = styled.h1`
@@ -15,6 +18,9 @@ export const Headline = styled.h1`
     text-align: center;
     color: #4962BB;
     margin-bottom: 2rem;
+    @media screen and (max-width: 320px) {
+        font-size: 26px;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -31,7 +37,7 @@ export const ButtonHeadline = styled.h2`
     line-height: 27px;
     letter-spacing: 0.02em;
     color: #4962BB;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 `;
 
 export const ButtonLink = styled.a`

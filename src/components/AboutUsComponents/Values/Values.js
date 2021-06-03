@@ -13,17 +13,15 @@ import {
     WrapperDesc,
     CardHeadline,
     CardDesc,
-    
-
 } from './Values.elements';
 
-const Values = ( {valuesTitle, valuesData} ) => {
+const Values = ( {headline, valuesData} ) => {
     const [cards] = useState(valuesData);
     return (
         <>
             <BaseSection>
                 <Container>
-                    <Headline>{valuesTitle}</Headline>
+                    <Headline>{headline}</Headline>
                     <UnderlineContainer>
                         <Underline></Underline>
                     </UnderlineContainer>

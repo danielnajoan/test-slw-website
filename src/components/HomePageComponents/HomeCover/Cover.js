@@ -7,12 +7,12 @@ import {
   Column,
   TextWrapper,
   Headline,
-  Subtitle,
+  Subheadline,
 } from './Cover.elements';
 
 function Cover({
   headline,
-  description,
+  subheadline,
   buttonLabel,
 }) {
   return (
@@ -23,9 +23,9 @@ function Cover({
               <Column>
                 <TextWrapper>
                   <Headline>{headline}</Headline>
-                  <Subtitle>{description}</Subtitle>
+                  <Subheadline>{subheadline}</Subheadline>
                   <Link to='/'>
-                    <Button3 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
+                    <Button3 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
                       {buttonLabel}
                     </Button3>
                   </Link>

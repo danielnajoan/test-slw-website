@@ -4,18 +4,18 @@ import ModalTeam from '../ModalTeam/ModalTeam';
 import {
     BaseSection,
     Headline,
-    Subtitle,
+    Subheadline,
     CardContainer,
 } from './SLWTeam.elements';
 
-const SLWTeam = ({ headline, subtitle, teamsData }) => {
+const SLWTeam = ({ headline, subheadline, teamsData }) => {
     const [cardData] = useState(teamsData);
     return (
         <>
             <BaseSection>
                 <Container>
                     <Headline>{headline}</Headline>
-                    <Subtitle>{subtitle}</Subtitle>
+                    <Subheadline>{subheadline}</Subheadline>
                     <CardContainer>
                         <ModalTeam cards={cardData}/>
                     </CardContainer>

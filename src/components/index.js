@@ -1,5 +1,6 @@
 export { default as Navbar } from './Navbar/Navbar';
 export { default as Footer } from './Footer/Footer';
+export { default as ScrollToTop } from './ScrollToTop';
 export { default as HomeCover } from './HomePageComponents/HomeCover/Cover';
 export { default as Greet } from './HomePageComponents/Greet/Greet';
 export { default as Dial } from './HomePageComponents/Dial/Dial';
@@ -12,6 +13,7 @@ export { default as AboutUsCover } from './AboutUsComponents/AboutUsCover/Cover'
 export { default as Values } from './AboutUsComponents/Values/Values';
 export { default as OurStory } from './AboutUsComponents/OurStory/OurStory';
 export { default as SLWTeam } from './AboutUsComponents/SLWTeam/SLWTeam';
+export { default as CommunityCover } from './CommunityComponents/CommunityCover/CommunityCover';
 export { default as ContactForm } from './ContactUsComponents/ContactForm/ContactForm';
 export { default as InfoPartner } from './ContactUsComponents/InfoPartner/InfoPartner';
 export { default as GetInvolvedCover } from './GetInvolvedComponents/GetInvolvedCover/GetInvolvedCover';

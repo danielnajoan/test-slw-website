@@ -14,7 +14,7 @@ export const Headline = styled.h1`
     color: #3A2A2A;
     margin-bottom: 2rem;
 `;
-export const Subtitle = styled.h2`
+export const Subheadline = styled.h2`
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;

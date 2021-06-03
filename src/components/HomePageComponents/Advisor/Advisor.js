@@ -27,7 +27,7 @@ const Advisor = ({ headline, imageUrl, imageName, imageTitle, description, urlBu
                         <Description>{description}</Description>
                     </Wrapper>
                     <Redirect href={urlButton}>
-                        <Button6 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
+                        <Button6 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
                         {buttonLabel}
                         </Button6>
                   </Redirect>

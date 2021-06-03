@@ -2,11 +2,12 @@ import React, {memo} from 'react';
 import GlobalStyle from './globalStyles';
 import { Home, AboutUs, Community, ContactUs, GetInvolved, Volunteer, Team } from './pages';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Navbar, Footer } from './components';
+import { Navbar, Footer, ScrollToTop } from './components';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <GlobalStyle />
       <Navbar />
       <Switch>

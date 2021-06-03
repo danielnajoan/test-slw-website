@@ -48,14 +48,17 @@ export const StoryHeadline = styled.h1`
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 2rem;
     line-height: 145.4%;
     letter-spacing: 0.01em;
     color: #2F3E72;
     margin-bottom: 2rem;
-      @media screen and (max-width: 960px) {
+    @media screen and (max-width: 960px) {
       align-items: center;
       text-align: center;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 1.5rem;
     }
 `;
 
@@ -63,14 +66,17 @@ export const StoryParagraph = styled.p`
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.2rem;
     line-height: 145.4%;
     letter-spacing: 0.01em;
     color: #3C3C3C;
     margin-bottom: 2rem;
-      @media screen and (max-width: 960px) {
+    @media screen and (max-width: 960px) {
       align-items: center;
       text-align: center;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 0.8rem;
     }
 `;
 
@@ -82,11 +88,14 @@ export const ButtonHeadline = styled.h1`
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 2rem;
     line-height: 119.6%;
     color: #091F6B;
-    margin-bottom: 1rem;
-      @media screen and (max-width: 960px) {
+    margin-bottom: 2rem;
+    @media screen and (max-width: 960px) {
       align-items: center;
+    }
+    @media screen and (max-width: 320px) {
+        font-size: 1.5rem;
     }
 `;

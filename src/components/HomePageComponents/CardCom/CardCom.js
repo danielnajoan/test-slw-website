@@ -36,7 +36,7 @@ const CardCom = ({ cards }) => {
                             <CardDesc>
                                 <CardText>{cardTextDesc}</CardText>
                                 <CardButton href={link}>
-                                    <Button4 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
+                                    <Button4 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
                                         {buttonLabel}
                                     </Button4>
                                 </CardButton>

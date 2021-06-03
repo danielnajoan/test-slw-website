@@ -35,7 +35,7 @@ const PastVolunteer = ({ headline, pastVolunteersData, buttonLabel }) => {
                     })}
                     </CardContainer>
                     <Link to='/'>
-                        <Button2 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true} width={false}>
+                        <Button2 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true} btnWidth={false}>
                         {buttonLabel}
                         </Button2>
                     </Link>

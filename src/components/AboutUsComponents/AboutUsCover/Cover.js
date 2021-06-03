@@ -5,13 +5,13 @@ import {
   Row,
   Headline,
   Wrapper,
-  Subtitle,
+  Subheadline,
   Description,
 } from './Cover.elements';
 
 function Cover({
   headline,
-  subtitle,
+  subheadline,
   description,
 }) {
   return (
@@ -21,7 +21,7 @@ function Cover({
               <Row>
                   <Headline>{headline}</Headline>
                   <Wrapper>
-                    <Subtitle>{subtitle}</Subtitle>
+                    <Subheadline>{subheadline}</Subheadline>
                   </Wrapper>
                   <Wrapper>
                     <Description>{description}</Description>

@@ -9,11 +9,11 @@ import infoImg from '../../images/White.png';
 
 import advisorLogo from '../../images/Mind Miracle Center.png';
 
-import loveLogo from '../../images/Love.png';
+import loveLogo from '../../images/Love-HomeIcon.png';
 
 export const coverObj = {
   headline: 'Do you want to start loving yourself?',
-  description: 'Your self-love journey starts here.',
+  subheadline: 'Your self-love journey starts here.',
   buttonLabel: 'Let’s Go!',
 };
 

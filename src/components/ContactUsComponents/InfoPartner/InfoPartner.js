@@ -15,15 +15,15 @@ const InfoPartner = ({ headline, colParaf1, paragraph1, colParaf2, paragraph2, b
             <BaseSection>
                 <Container>
                     <Headline>{headline}</Headline>
+                    <Wrapper>
                     <Paragraph fontWeight={colParaf1}>{paragraph1}</Paragraph>
                     <Paragraph fontWeight={colParaf2}>{paragraph2}</Paragraph>
-                    <Wrapper>
-                            <ButtonHeadline>{btnHeadline}</ButtonHeadline>
-                            <ButtonLink href={url}>
-                                <Button1 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
-                                {buttonLabel}
-                                </Button1>
-                            </ButtonLink>
+                        <ButtonHeadline>{btnHeadline}</ButtonHeadline>
+                        <ButtonLink href={url}>
+                            <Button1 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
+                            {buttonLabel}
+                            </Button1>
+                        </ButtonLink>
                     </Wrapper>
                 </Container>
             </BaseSection>

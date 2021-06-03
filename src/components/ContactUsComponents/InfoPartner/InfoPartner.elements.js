@@ -10,11 +10,27 @@ export const Headline = styled.h1`
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 40px;
     line-height: 38px;
     text-align: center;
     color: #091F6B;
     margin-bottom: 2rem;
+    @media screen and (max-width: 320px) {
+        font-size: 26px;
+    }
+`;
+
+export const Wrapper = styled.div`
+    word-wrap: normal;
+    width: 50%;
+    align-items: center;
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    @media screen and (max-width: 550px) {
+        text-align: center;
+        width: 100%;
+    }
 `;
 
 export const Paragraph = styled.p`
@@ -23,14 +39,11 @@ export const Paragraph = styled.p`
     font-weight: ${props => props.fontWeight};
     font-size: 18px;
     line-height: 25px;
-    text-align: center;
     color: #091F6B;
     margin-bottom: 2rem;
-`;
-export const Wrapper = styled.div`
-    align-items: center;
-    text-align: center;
-    margin-bottom: 2rem;
+    @media screen and (max-width: 320px) {
+        font-size: 14px;
+    }
 `;
 
 export const ButtonHeadline = styled.h2`
@@ -40,12 +53,13 @@ export const ButtonHeadline = styled.h2`
     font-size: 24px;
     line-height: 33px;
     color: #091F6B;
-
     letter-spacing: 0.02em;
     margin-bottom: 2rem;
+    @media screen and (max-width: 320px) {
+        font-size: 20px;
+    }
 `;
 
 export const ButtonLink = styled.a`
-    padding: 0.5rem;
     margin-bottom: 2rem;
 `;

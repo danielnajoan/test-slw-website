@@ -1,11 +1,11 @@
 import React, {memo} from 'react';
-import {  } from './Data';
-import {  } from '../../components';
+import { communityCoverObj } from './Data';
+import { CommunityCover } from '../../components';
 
 function Community() {
   return (
     <>
-      
+      <CommunityCover {...communityCoverObj}/>
     </>
   );
 }

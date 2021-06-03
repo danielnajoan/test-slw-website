@@ -17,7 +17,7 @@ const ContactForm = ({ formHeadline, btnHeadline1, url1, buttonLabel1, btnHeadli
                     <Wrapper>
                         <ButtonHeadline>{btnHeadline1}</ButtonHeadline>
                         <ButtonLink href={url1}>
-                            <Button1 primary={false} colLabel={false} btnBorder={false} btnPadding={false} fontSize={false}>
+                            <Button1 primary={false} colLabel={false} btnBorder={false} btnPadding={false} btnFontSize={false}>
                             {buttonLabel1}
                             </Button1>
                         </ButtonLink>
@@ -25,12 +25,11 @@ const ContactForm = ({ formHeadline, btnHeadline1, url1, buttonLabel1, btnHeadli
                     <Wrapper>
                         <ButtonHeadline>{btnHeadline2}</ButtonHeadline>
                         <ButtonLink href={url2}>
-                            <Button1 primary={true} colLabel={true} btnBorder={true} btnPadding={true} fontSize={true}>
+                            <Button1 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
                             {buttonLabel2}
                             </Button1>
                         </ButtonLink>
                     </Wrapper>
-                    
                 </Container>
             </BaseSection>
 

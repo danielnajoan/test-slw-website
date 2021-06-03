@@ -4,6 +4,9 @@ export const BaseSection = styled.div`
     position: relative;
     padding: 160px 0;
     background: #fff;
+    @media screen and (max-width: 320px) {
+        padding: 70px 0;
+    }
 `;
 
 export const Row = styled.div`
@@ -37,8 +40,7 @@ export const Wrapper = styled.div`
     display: flex;
 `;
 
-export const Subtitle = styled.p`
-    
+export const Subheadline = styled.p`
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;

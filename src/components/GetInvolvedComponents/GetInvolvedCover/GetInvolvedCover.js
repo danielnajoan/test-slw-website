@@ -34,10 +34,10 @@ const GetInvolvedCover = ({ headline, subheadline, getInvolvedsData }) => {
                     return (
                         <CardSec key={id} backgroundColor={backgroundColor}>
                             <CardInfo>
-                                <CardHeadline color={titleColor}>{cardTitle}</CardHeadline>
-                                <CardDesc color={descColor}>{cardDesc}</CardDesc>
+                                <CardHeadline colorHeadline={titleColor}>{cardTitle}</CardHeadline>
+                                <CardDesc colorDesc={descColor}>{cardDesc}</CardDesc>
                                 <ButtonLink to={path}>
-                                    <Button3 primary={btnTheme} colLabel={btnTheme} btnBorder={btnTheme} btnPadding={btnTheme} fontSize={btnTheme}>
+                                    <Button3 primary={btnTheme} colLabel={btnTheme} btnBorder={btnTheme} btnPadding={btnTheme} btnFontSize={btnTheme}>
                                     {buttonLabel}
                                     </Button3>
                                 </ButtonLink>

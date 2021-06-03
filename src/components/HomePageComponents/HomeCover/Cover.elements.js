@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import coverImg from '../../../images/Background-4.png';
+import coverImg from '../../../images/DesktopBackground-2.png';
 
 export const BaseSection = styled.div`
   position: relative;
@@ -66,7 +66,7 @@ export const Headline = styled.h1`
   }
 `;
 
-export const Subtitle = styled.p`
+export const Subheadline = styled.p`
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;

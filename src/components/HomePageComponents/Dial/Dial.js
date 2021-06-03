@@ -15,7 +15,7 @@ const Dial = ({ headline }) => {
                     <Headline>{headline}</Headline>
                     <ImageContainer>
                         <FrameSection>
-                            <iframe title="Dial SLW Spotify" src="https://open.spotify.com/embed-podcast/show/34v0UM4glbrDVC5EwmgjWl" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <iframe title="Dial SLW Spotify" src="https://open.spotify.com/embed-podcast/show/34v0UM4glbrDVC5EwmgjWl" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </FrameSection>
                     </ImageContainer>
                 </Container>

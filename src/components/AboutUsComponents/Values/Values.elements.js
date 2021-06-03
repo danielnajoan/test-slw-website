@@ -7,16 +7,22 @@ export const BaseSection = styled.div`
     text-align: center;
     justify-content: center;
     background: #FFF2E7;
+    @media screen and (max-width: 320px) {
+        padding: 60px 0;
+    }
 `;
 
 export const Headline = styled.h1`
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 172.3%;
     letter-spacing: 0.01em;
     color: #091F6B;
+    @media screen and (max-width: 550px) {
+        font-size: 40px;
+    }
 `;
 
 export const UnderlineContainer = styled.div`
@@ -38,7 +44,6 @@ export const CardContainer = styled.div`
     align-items: center;
 
     @media screen and (max-width: 960px) {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -51,9 +56,9 @@ export const CardSec = styled.div`
     height: 400px;
     margin: 3rem;
 
-    @media screen and (max-width: 960px) {
-        width: 90%;
-
+    @media screen and (max-width: 550px) {
+        height: 300px;
+        margin: 1rem;
     }
 `;
 
@@ -75,9 +80,12 @@ export const CardIcon = styled.img`
     align-items: center;
     height: auto; 
     width: auto;
-    max-width: 320px; 
+    max-width: 220px; 
     max-height: 350px;
     padding: 0.5rem;
+    @media screen and (max-width: 550px) {
+        max-width: 160px; 
+    }
 `;
 
 export const DescriptionSec = styled.div`
@@ -85,10 +93,10 @@ export const DescriptionSec = styled.div`
 `;
 
 export const WrapperDesc = styled.div`
-        word-wrap: normal;
+    word-wrap: normal;
 `;
 
-export const CardHeadline = styled.div`
+export const CardHeadline = styled.h2`
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -96,9 +104,12 @@ export const CardHeadline = styled.div`
     line-height: 119.6%;
     color: #FF565E;
     margin-bottom:0.5rem;
+    @media screen and (max-width: 550px) {
+        font-size: 1.7rem;
+    }
 `;
 
-export const CardDesc = styled.div`
+export const CardDesc = styled.p`
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
@@ -106,4 +117,7 @@ export const CardDesc = styled.div`
     line-height: 25px;
     letter-spacing: 0.01em;
     color: #091F6B;
+    @media screen and (max-width: 550px) {
+        font-size: 1.2rem;
+    }
 `;

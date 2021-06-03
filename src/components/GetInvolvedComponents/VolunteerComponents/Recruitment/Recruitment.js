@@ -18,14 +18,11 @@ const Recruitment = ({ headline, subheadline, paragraph1, paragraph2, imageHeadl
             <BaseSection>
                 <BaseWrapper>
                     <Container>
-                        
-                            <Headline>{headline}</Headline>
-                            <Subheadline>{subheadline}</Subheadline>
-                            <Paragraph>{paragraph1}</Paragraph>
-                            <Paragraph>{paragraph2}</Paragraph>
-                        
-                        
-                            <ImageHeadline>{imageHeadline}</ImageHeadline>
+                        <Headline>{headline}</Headline>
+                        <Subheadline>{subheadline}</Subheadline>
+                        <Paragraph>{paragraph1}</Paragraph>
+                        <Paragraph>{paragraph2}</Paragraph>
+                        <ImageHeadline>{imageHeadline}</ImageHeadline>
                         <Wrapper>
                             <ImageContainer>
                                 <Image></Image>

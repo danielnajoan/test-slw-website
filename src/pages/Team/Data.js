@@ -2,7 +2,7 @@
 
 export const slwTeamObj =  {
     headline: 'Get to know the SLW Team!',
-    subtitle: 'We are the youths working to create a safer space for all.',
+    subheadline: 'We are the youths working to create a safer space for all.',
     teamsData: [
         {
             id: 1,
