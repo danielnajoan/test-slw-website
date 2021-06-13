@@ -12,9 +12,9 @@ export const Headline = styled.h1`
     font-weight: bold;
     font-size: 40px;
     line-height: 38px;
-    text-align: center;
     color: #091F6B;
     margin-bottom: 2rem;
+    padding: 1rem;
     @media screen and (max-width: 320px) {
         font-size: 26px;
     }
