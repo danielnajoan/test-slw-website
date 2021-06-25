@@ -3,9 +3,10 @@ import { Container } from '../../../globalStyles';
 import RenderButton from '../RenderButton/RenderButton';
 import {
     BaseSection,
+    Header,
     BaseImage,
     BaseWrapper,
-    Row,
+    ButtonContainer,
     Headline,
     Subheadline,
 } from './CommunityCover.elements';
@@ -16,24 +17,22 @@ const CommunityCover = ({ headline, subheadline, buttonsData }) => {
         <>
             <BaseSection>
                 <BaseImage>
-                    <BaseWrapper>
-                        <Container>
-                            <Row>
+                    <Container>
+                        <BaseWrapper>
+                            <Header>
                                 <Headline>{headline}</Headline>
-                            </Row>
-                            <Row>
                                 <Subheadline>{subheadline}</Subheadline>
-                            </Row>
-                            <Row>
-                            {cards.map((buttonData) => {
-                                const { id, urlButton, buttonLabel } = buttonData;
-                                return (
-                                <RenderButton key={id} id={id} urlButton={urlButton} buttonLabel={buttonLabel}/>
-                                );
-                            })}
-                            </Row>
-                        </Container>
-                    </BaseWrapper>
+                            </Header>
+                            <ButtonContainer>
+                                {cards.map((buttonData) => {
+                                    const { id, urlButton, buttonLabel } = buttonData;
+                                    return (
+                                    <RenderButton key={id} id={id} urlButton={urlButton} buttonLabel={buttonLabel}/>
+                                    );
+                                })}
+                            </ButtonContainer>
+                        </BaseWrapper>
+                    </Container>
                 </BaseImage>
             </BaseSection>
         </>

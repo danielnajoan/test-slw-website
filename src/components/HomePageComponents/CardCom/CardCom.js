@@ -19,7 +19,6 @@ const breakPoints = [
     { width: 1200, itemsToShow: 4 }
   ];
 
-
 const CardCom = ({ cards }) => {
     return (
         <>

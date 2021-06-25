@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Column = styled.div`
-    margin: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
 `;
 
 export const Redirect = styled.a`
     text-decoration: none;
-    margin-top: 1rem;
 `;

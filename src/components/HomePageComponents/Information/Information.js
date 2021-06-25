@@ -25,18 +25,18 @@ function Infrormation({
                                 <Headline>{headline}</Headline>
                             </TextWrapper>
                             <BtnColumn>
-                            <Link to='/contact-us'>
-                                <Button5 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
-                                    {buttonLabel1}
-                                </Button5>
-                            </Link>
+                                <Link to='/contact-us'>
+                                    <Button5 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
+                                        {buttonLabel1}
+                                    </Button5>
+                                </Link>
                             </BtnColumn>
                             <BtnColumn>
-                            <Link to='/newsletter'>
-                                <Button5 primary={false} colLabel={false} btnBorder={false} btnPadding={false} btnFontSize={false}>
-                                    {buttonLabel2}
-                                </Button5>
-                            </Link>
+                                <Link to='/newsletter'>
+                                    <Button5 primary={false} colLabel={false} btnBorder={false} btnPadding={false} btnFontSize={false}>
+                                        {buttonLabel2}
+                                    </Button5>
+                                </Link>
                             </BtnColumn>
                         </BaseColumn>
                     </BaseRow>
