@@ -36,7 +36,8 @@ export const Column = styled.div`
     text-align: ${({ btnTextAlign }) => (btnTextAlign ? 'right' : 'left')};
     @media screen and (max-width: 550px) {
         text-align: center;
-        width: 100%
+        width: 100%;
+        margin-bottom: 1rem;
     }
 `;
 

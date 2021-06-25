@@ -1,13 +1,12 @@
 import React, {memo} from 'react';
-import { Link } from 'react-router-dom';
 import { Container, Button5 } from '../../../globalStyles';
 import {
     BaseSection,
-    BaseRow,
-    BaseColumn,
-    TextWrapper,
-    BtnColumn,
+    Wrapper,
     Headline,
+    Row,
+    Column,
+    ButtonLink,
 } from './Infrormation.elements';
 
 function Infrormation({
@@ -19,27 +18,25 @@ function Infrormation({
         <>
             <BaseSection>
                 <Container>
-                    <BaseRow>
-                        <BaseColumn>
-                            <TextWrapper>
-                                <Headline>{headline}</Headline>
-                            </TextWrapper>
-                            <BtnColumn>
-                                <Link to='/contact-us'>
-                                    <Button5 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
-                                        {buttonLabel1}
-                                    </Button5>
-                                </Link>
-                            </BtnColumn>
-                            <BtnColumn>
-                                <Link to='/newsletter'>
-                                    <Button5 primary={false} colLabel={false} btnBorder={false} btnPadding={false} btnFontSize={false}>
-                                        {buttonLabel2}
-                                    </Button5>
-                                </Link>
-                            </BtnColumn>
-                        </BaseColumn>
-                    </BaseRow>
+                    <Wrapper>
+                        <Headline>{headline}</Headline>
+                    </Wrapper>
+                    <Row>
+                        <Column btnTextAlign={true}>
+                            <ButtonLink to='/contact-us'>
+                                <Button5 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
+                                    {buttonLabel1}
+                                </Button5>
+                            </ButtonLink>
+                        </Column>
+                        <Column btnTextAlign={false}>
+                            <ButtonLink to='/newsletter'>
+                                <Button5 primary={false} colLabel={false} btnBorder={false} btnPadding={false} btnFontSize={false}>
+                                    {buttonLabel2}
+                                </Button5>
+                            </ButtonLink>
+                        </Column>
+                    </Row>
                 </Container>
             </BaseSection>
         </>

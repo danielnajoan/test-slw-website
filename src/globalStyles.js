@@ -252,7 +252,7 @@ export const Button9 = styled.button`
   padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : '10px 34px'))};
   font-size: ${({ btnFontSize }) => (btnFontSize ? '18px' : '18px')};
   border-radius: 6px;
-  width: auto;
+  width: 300px;
   white-space: nowrap;
   outline: none;
   cursor: pointer;
@@ -261,6 +261,30 @@ export const Button9 = styled.button`
     background-color: ${({ primary }) => (primary ? 'transparent' : '#FFFFFF')};
     color: ${({ colLabel }) => (colLabel ? '#FFFFFF' : '#5F71AC')};
     border: ${({ btnBorder }) => (btnBorder ? '2px solid #FFFFFF' : '2px solid #FFFFFF')};
+  }
+`;
+
+//For Home Event Section
+export const Button10 = styled.button`
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 135.94%;
+  background-color: ${({ primary }) => (primary ? 'transparent' : 'none')};
+  color: ${({ colLabel }) => (colLabel ? '#5F71AC' : 'none')};
+  border: ${({ btnBorder }) => (btnBorder ? '2px solid #5F71AC' : 'none')};
+  padding: ${({ btnPadding }) => ((btnPadding ? '5px 34px' : 'none'))};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? '18px' : 'none')};
+  border-radius: 100px;
+  width: auto;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${({ primary }) => (primary ? '#5F71AC' : 'none')};
+    color: ${({ colLabel }) => (colLabel ? '#FFFFFF' : 'none')};
+    border: ${({ btnBorder }) => (btnBorder ? '2px solid #5F71AC' : 'none')};
   }
 `;
 

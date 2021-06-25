@@ -1,4 +1,6 @@
-import imageLogo from '../../images/Mind Miracle Center.webp';
+import loveLogo from '../../images/Love-HomeIcon.png';
+
+import testImage from '../../images/SLW Internal Team.png';
 
 import discordIcon from '../../images/Discord Icon.png';
 import spotifyIcon from '../../images/Spotify Icon.png';
@@ -9,17 +11,43 @@ import infoImg from '../../images/White.png';
 
 import advisorLogo from '../../images/Mind Miracle Center.png';
 
-import loveLogo from '../../images/Love-HomeIcon.png';
+import imageLogo from '../../images/Mind Miracle Center.webp';
 
 export const coverObj = {
   headline: 'Do you want to start loving yourself?',
   subheadline: 'Your self-love journey starts here.',
   buttonLabel: 'Let’s Go!',
-};
+}
 
 export const greetObj = {
     headline: 'Hi, there! Nice to meet you.',
     paragraph: 'We are a youth-based organization raising awareness on self-love and mental health in Indonesia since 2018.',
+}
+
+export const eventObj = {
+    headline: 'Check out our ongoing events!',
+    eventsData: [
+        {
+            id: 1,
+            cardHeadline: 'Online Webinar',
+            imageUrl: testImage,
+            imageName: 'Event',
+            title: 'SLW x Bartega Studio Fireside Chat',
+            paragraph: 'May 29th, 2020 -  8:00 PM',
+            urlButton: '',
+            buttonLabel: 'Join',
+        },
+        {
+            id: 2,
+            cardHeadline: 'Online Webinar',
+            imageUrl: testImage,
+            imageName: 'Event',
+            title: 'SLW x Bartega Studio Fireside Chat',
+            paragraph: 'May 29th, 2020 -  8:00 PM',
+            urlButton: '',
+            buttonLabel: 'Join',
+        },
+    ],
 }
 
 export const dialObj = {
@@ -67,7 +95,7 @@ export const communityObj = {
             buttonLabel: 'Listen Now',
         },
     ]
-};
+}
 
 export const partnerObj = {
     headline:'See our past collaborations',
@@ -104,7 +132,7 @@ export const partnerObj = {
             imageUrl:imageLogo,
         },
     ],
-};
+}
 
 export const infoObj = {
     headline: 'Let’s stop making mental health boring.',
