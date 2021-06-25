@@ -246,22 +246,21 @@ export const Button9 = styled.button`
   font-style: normal;
   font-weight: bold;
   line-height: 135.94%;
-  background-color: ${({ primary }) => (primary ? '#325EFC' : 'none')};
-  color: ${({ colLabel }) => (colLabel ? '#FFFFFF' : 'none')};
-  border: ${({ btnBorder }) => (btnBorder ? '2px solid #325EFC' : 'none')};
-  padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : 'none'))};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? '18px' : 'none')};
-  border-radius: 33px;
+  background-color: ${({ primary }) => (primary ? '#FFFFFF' : 'transparent')};
+  color: ${({ colLabel }) => (colLabel ? '#5F71AC' : '#FFFFFF')};
+  border: ${({ btnBorder }) => (btnBorder ? '2px solid #FFFFFF' : '2px solid #FFFFFF')};
+  padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : '10px 34px'))};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? '18px' : '18px')};
+  border-radius: 6px;
   width: auto;
   white-space: nowrap;
   outline: none;
   cursor: pointer;
 
   &:hover {
-    background-color: ${({ primary }) => (primary ? 'transparent' : 'none')};
-    color: ${({ colLabel }) => (colLabel ? '#325EFC' : 'none')};
-    border: ${({ btnBorder }) => (btnBorder ? '2px solid #325EFC' : 'none')};
-    padding: ${({ btnPadding }) => ((btnPadding ? '10px 34px' : 'none'))};
+    background-color: ${({ primary }) => (primary ? 'transparent' : '#FFFFFF')};
+    color: ${({ colLabel }) => (colLabel ? '#FFFFFF' : '#5F71AC')};
+    border: ${({ btnBorder }) => (btnBorder ? '2px solid #FFFFFF' : '2px solid #FFFFFF')};
   }
 `;
 

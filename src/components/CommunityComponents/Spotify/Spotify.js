@@ -26,13 +26,14 @@ const Spotify = ({ headline, urlButton, buttonLabel, spotifysData }) => {
                         </Redirect>
                     </ButtonContainer>
                     {cards.map((cardData) => {
-                        const { id, cardHeadline, urlIframe, paragraph, boldParagraph } = cardData;
+                        const { id, cardHeadline, urlIframe, iframeTitle, paragraph, boldParagraph } = cardData;
                         return (
                             <CardBaseSection key={id}>
                                 <CardHeadline>{cardHeadline}</CardHeadline>
                                 <IframeContainer>
                                     <iframe
                                     src={urlIframe}
+                                    title={iframeTitle}
                                     width="100%" 
                                     height="232" 
                                     frameborder="0" 

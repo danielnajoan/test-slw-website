@@ -176,6 +176,7 @@ export const spotifyObj = {
             id: 1,
             cardHeadline: 'Audio Bytes: 1800-SLW',
             urlIframe: 'https://open.spotify.com/embed-podcast/show/1v57eiSx5t85YRkORxKiEN',
+            iframeTitle: 'Playlist - 1',
             paragraph: 'A collection of 8 tracks to help you feel better when you don\'t have anyone to talk to, just like an imaginary friend on the phone. ',
             boldParagraph: 'Available in both English and Bahasa Indonesia.',
         },
@@ -183,8 +184,15 @@ export const spotifyObj = {
             id: 2,
             cardHeadline: 'Audio Bytes: 1800-SLW',
             urlIframe: 'https://open.spotify.com/embed-podcast/episode/3rbNil6JSmprVXz2J0xc0X',
+            iframeTitle: 'Playlist - 2',
             paragraph: 'Fun and insightful discussions about mental health issues with fellow team members, public figures, and professionals.',
             boldParagraph: 'New episode comes out in every three weeks!',
         },
     ],
+}
+
+export const comInformationObj = {
+    headline: 'Let’s create an environment where it’s safe to talk about mental health.',
+    buttonLabel1: 'Contact Us',
+    buttonLabel2: 'Join Newsletter',
 }

@@ -1,6 +1,6 @@
 import React, {memo} from 'react';
-import { communityCoverObj, instagramObj, rantObje, contentObj, activitiesObj, discordObj, subdiscordObj, spotifyObj } from './Data';
-import { CommunityCover, Instagram, Rant, Content, Activities, Discord, SubDiscord, Spotify } from '../../components';
+import { communityCoverObj, instagramObj, rantObje, contentObj, activitiesObj, discordObj, subdiscordObj, spotifyObj, comInformationObj } from './Data';
+import { CommunityCover, Instagram, Rant, Content, Activities, Discord, SubDiscord, Spotify, ComInformation } from '../../components';
 
 function Community() {
   return (
@@ -13,6 +13,7 @@ function Community() {
       <Discord {...discordObj}/>
       <SubDiscord {...subdiscordObj}/>
       <Spotify {...spotifyObj}/>
+      <ComInformation {...comInformationObj}/>
     </>
   );
 }

@@ -21,6 +21,7 @@ export { default as Activities } from './CommunityComponents/Activities/Activiti
 export { default as Discord } from './CommunityComponents/Discord/Discord';
 export { default as SubDiscord } from './CommunityComponents/SubDiscord/SubDiscord';
 export { default as Spotify } from './CommunityComponents/Spotify/Spotify';
+export { default as ComInformation } from './CommunityComponents/ComInformation/ComInformation';
 export { default as ContactForm } from './ContactUsComponents/ContactForm/ContactForm';
 export { default as InfoPartner } from './ContactUsComponents/InfoPartner/InfoPartner';
 export { default as GetInvolvedCover } from './GetInvolvedComponents/GetInvolvedCover/GetInvolvedCover';
