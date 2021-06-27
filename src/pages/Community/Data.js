@@ -5,6 +5,10 @@ import chatBuble from '../../images/Temporary.png';
 import discordOne from '../../images/Community-Discord-1.png';
 import discordTwo from '../../images/Community-Discord-2.png';
 
+
+import testimonyOne from '../../images/Testimony-1.png';
+import testimonyTwo from '../../images/Testimony-2.png';
+
 export const communityCoverObj = {
     headline:'A safe space for you',
     subheadline:'The loving and supporting community is here.',
@@ -143,6 +147,28 @@ export const activitiesObj = {
             imageUrl: testImage,
             imageName: 'figureImage',
             cardDesc: 'Collaborating with educational institutions and school councils.',
+        },
+    ],
+}
+
+export const testimonyObj = {
+    headline: 'Learn what people say about our Support Groups!',
+    testimoniesData: [
+        {
+            id: 1,
+            imageUrl: testimonyOne,
+            imageName: 'Testimony',
+            cardHeadline: 'Maggie',
+            cardSubheadline: 'Participant',
+            cardParagraph: '“The virtual support group connects strangers with a similar purpose, which is self-discovery to be more kind and love themselves more. Also, it connects us to new people who can be your mutuals on any topics, even for a lifelong friendship. Both facilitators and support-group members are very welcome and supportive. Other than the breakout room after the webinars, my group have our own session to get to know each other better. It is indeed a very great experience, Kudos to the Self Love Warrior team!”',
+        },
+        {
+            id: 2,
+            imageUrl: testimonyTwo,
+            imageName: 'Testimony',
+            cardHeadline: 'Anggi Avianti',
+            cardSubheadline: 'Support Group Facilitator',
+            cardParagraph: 'Virtual support group SLW ini worth it banget! Baru ikut 2 kali sesi materi dari total 6 sesi tapinya udah dapat banyak insights serta spirit untuk maju kearah yang lebih baik. Aku juga bersyukur bisa jadi fasilitator di VSG SLW kali ini karena bisa bertemu dan saling bertukar insights dengan teman-teman peserta lain yang satu tujuan, sehingga insights yang diperoleh tuh lebih mendalam. Thank you SLW -- keren!”',
         },
     ],
 }

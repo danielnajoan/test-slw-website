@@ -19,6 +19,7 @@ export { default as Instagram } from './CommunityComponents/Instagram/Instagram'
 export { default as Rant } from './CommunityComponents/Rant/Rant';
 export { default as Content } from './CommunityComponents/Content/Content';
 export { default as Activities } from './CommunityComponents/Activities/Activities';
+export { default as Testimony } from './CommunityComponents/Testimony/Testimony';
 export { default as Discord } from './CommunityComponents/Discord/Discord';
 export { default as SubDiscord } from './CommunityComponents/SubDiscord/SubDiscord';
 export { default as Spotify } from './CommunityComponents/Spotify/Spotify';
