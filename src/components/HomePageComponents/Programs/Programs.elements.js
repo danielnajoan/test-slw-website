@@ -29,7 +29,7 @@ export const UnderlineContainer = styled.div`
 `;
 
 export const Underline = styled.div`
-    width: 60rem;
+    width: 55rem;
     border: 2px solid #FFCCCC;
     background-color: #FFCCCC;
     border-radius: 25px;
@@ -53,7 +53,7 @@ export const CardContainer = styled.div`
 `;
 
 export const CardSection = styled.div`
-    width: 30rem;
+    width: 25rem;
     margin: 1rem 1rem;
     text-align: left;
     background: #FFFFFF;
@@ -88,6 +88,11 @@ export const CardColumn = styled.div`
     }
 `;
 
+export const CardWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
 export const CardHeadline = styled.h2`
     font-family: Nunito;
     font-style: normal;
@@ -95,14 +100,14 @@ export const CardHeadline = styled.h2`
     font-size: 20px;
     line-height: 27px;
     color: #31458B;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
 `;
 
 export const CardArrowIcon = styled.img`
     
     max-width: 20px; 
     max-height: 20px;
-    margin-bottom: 2rem;
+    margin: 0rem 1rem;
     @media screen and (max-width: 320px) {
         max-width: 10px;
     }
@@ -110,22 +115,36 @@ export const CardArrowIcon = styled.img`
 `;
 
 export const ImageContainer = styled.div`
-    display: flex;
+    display: grid;
     text-align: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     @media screen and (max-width: 550px) {
     }
 `;
 
+export const ImageShadow = styled.div`
+    grid-area: 1 / 1 / 2 / 2;
+    width: 70px; 
+    height: 70px;
+    background: #FFDBB9;
+    border: 1px solid #FF565E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-left: -5px;
+    margin-top: 5px;
+`;
+
 export const Image = styled.img`
-    border: 0;
+    grid-area: 1 / 1 / 2 / 2;
     align-items: center;
     height: auto; 
     width: auto;
     max-width: 70px; 
     max-height: 70px;
-    border-radius: 6px;
+    border: 1px solid #E96156;
+    box-sizing: border-box;
+    border-radius: 8px;
     @media screen and (max-width: 320px) {
         max-width: 160px;
     }

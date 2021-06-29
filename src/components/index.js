@@ -5,6 +5,7 @@ export { default as HomeCover } from './HomePageComponents/HomeCover/Cover';
 export { default as Greet } from './HomePageComponents/Greet/Greet';
 export { default as Event } from './HomePageComponents/Event/Event';
 export { default as Programs } from './HomePageComponents/Programs/Programs';
+export { default as InstagramAPI } from './HomePageComponents/InstagramAPI/InstagramAPI';
 export { default as Impact } from './HomePageComponents/Impact/Impact';
 export { default as Dial } from './HomePageComponents/Dial/Dial';
 export { default as Community } from './HomePageComponents/Community/Community';

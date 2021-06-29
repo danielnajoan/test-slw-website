@@ -6,16 +6,18 @@ import {
     UnderlineContainer,
     Underline,
     CardContainer,
-    CardSec,
+    CardSection,
     CardInfo,
-    CardIcon,
-    DescriptionSec,
-    WrapperDesc,
-    CardHeadline,
-    CardDesc,
+    test,
 } from './InstagramAPI.elements';
 
-const InstagramAPI = ({  }) => {
+const InstagramAPI = ({ headline, instagramAPIsData }) => {
+    const [cards] = useState(instagramAPIsData);
+    const script = document.createElement("script");
+    script.src = "https://www.instagram.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+
     return (
         <>
             <BaseSection>
@@ -25,11 +27,16 @@ const InstagramAPI = ({  }) => {
                         <Underline></Underline>
                     </UnderlineContainer>
                     <CardContainer>
-                    {cards.map((valueData) => {
-                    const { id, imageUrl, imageName, cardTitle, cardDesc } = valueData;
+                    {cards.map((instagramAPIData) => {
+                    const { id, instagramAPI } = instagramAPIData;
                     return (
-                        <CardSec key={id}>
-                        </CardSec>
+                        <CardSection key={id}>
+                            <CardInfo>
+                                <blockquote class={"instagram-media"} 
+                                    data-instgrm-permalink={instagramAPI} >
+                                </blockquote>
+                            </CardInfo>
+                        </CardSection>
                         );
                     })}
                     </CardContainer>
@@ -38,5 +45,6 @@ const InstagramAPI = ({  }) => {
         </>
     )
 }
+
 
 export default memo(InstagramAPI);

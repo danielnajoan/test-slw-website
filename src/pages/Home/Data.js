@@ -98,6 +98,28 @@ export const programsObj = {
     ],
 }
 
+export const instagramAPIObj = {
+    headline: 'Check us out on Instagram!',
+    instagramAPIsData: [
+        {
+            id: 1,
+            instagramAPI: 'https://www.instagram.com/p/CQk3vCvAzms'
+        },
+        {
+            id: 2,
+            instagramAPI: 'https://www.instagram.com/p/CQdfhKUgDe5/'
+        },
+        {
+            id: 3,
+            instagramAPI: 'https://www.instagram.com/p/CQTX6p5Aes1/'
+        },
+        {
+            id: 4,
+            instagramAPI: 'https://www.instagram.com/p/CQGT0yrAMUv/'
+        },
+    ],
+}
+
 export const impactObj = {
     headline: 'Our Impact',
     impactsData: [

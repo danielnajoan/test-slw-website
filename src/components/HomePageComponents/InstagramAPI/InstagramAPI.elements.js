@@ -2,11 +2,8 @@ import styled from 'styled-components';
 
 export const BaseSection = styled.div`
     padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
     background: #FFFFFF;
+    text-align: center;
     @media screen and (max-width: 320px) {
         padding: 60px 0;
     }
@@ -32,17 +29,21 @@ export const UnderlineContainer = styled.div`
 `;
 
 export const Underline = styled.div`
-    width: 100px;
-    height: 10px;
+    width: 55rem;
+    border: 2px solid #FFCCCC;
     background-color: #FFCCCC;
     border-radius: 25px;
+    @media screen and (max-width: 960px) {
+        width: 100%;
+    }
 `;
 
 export const CardContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: row;
+    flex-wrap: wrap;
     @media screen and (max-width: 960px) {
         flex-direction: column;
         justify-content: center;
@@ -51,13 +52,25 @@ export const CardContainer = styled.div`
     }
 `;
 
-export const CardSec = styled.div`
-    width: auto;
-    height: 280px;
-    margin: 3rem;
-
-    @media screen and (max-width: 550px) {
-        height: 300px;
+export const CardSection = styled.div`
+    width: 25rem;
+    margin: 1rem 1rem;
+    @media screen and (max-width: 920px) {
         margin: 1rem;
+        text-align: center;
+        height: 30rem;
+        width: 50%;
     }
+    @media screen and (max-width: 550px) {
+        width: 100%;
+    }
+`;
+
+export const CardInfo = styled.div`
+    padding: 1rem;
+`;
+
+export const test = styled.p`
+    background-color: red;
+    height: 1000rem;
 `;
