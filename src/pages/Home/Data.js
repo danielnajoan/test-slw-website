@@ -100,6 +100,8 @@ export const programsObj = {
 
 export const instagramAPIObj = {
     headline: 'Check us out on Instagram!',
+    urlButton: 'https://www.instagram.com/selflovewarrior.id/',
+    buttonLabel: 'Follow us',
     instagramAPIsData: [
         {
             id: 1,

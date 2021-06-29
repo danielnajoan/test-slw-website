@@ -74,3 +74,8 @@ export const test = styled.p`
     background-color: red;
     height: 1000rem;
 `;
+
+export const Redirect = styled.a`
+    text-decoration: none;
+    margin-top: 1rem;
+`;

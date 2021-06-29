@@ -1,5 +1,5 @@
 import React, { useState, memo } from 'react';
-import { Container } from '../../../globalStyles';
+import { Container, Button6 } from '../../../globalStyles';
 import {
     BaseSection,
     Headline,
@@ -8,10 +8,10 @@ import {
     CardContainer,
     CardSection,
     CardInfo,
-    test,
+    Redirect,
 } from './InstagramAPI.elements';
 
-const InstagramAPI = ({ headline, instagramAPIsData }) => {
+const InstagramAPI = ({ headline, urlButton, buttonLabel, instagramAPIsData }) => {
     const [cards] = useState(instagramAPIsData);
     const script = document.createElement("script");
     script.src = "https://www.instagram.com/embed.js";
@@ -40,6 +40,11 @@ const InstagramAPI = ({ headline, instagramAPIsData }) => {
                         );
                     })}
                     </CardContainer>
+                    <Redirect href={urlButton}>
+                        <Button6 primary={false} colLabel={false} btnBorder={false} btnPadding={false} btnFontSize={false}>
+                        {buttonLabel}
+                        </Button6>
+                    </Redirect>
                 </Container>
             </BaseSection>
         </>

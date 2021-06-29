@@ -30,7 +30,7 @@ const Advisor = ({ headline, imageUrl, imageName, imageTitle, description, urlBu
                         <Button6 primary={true} colLabel={true} btnBorder={true} btnPadding={true} btnFontSize={true}>
                         {buttonLabel}
                         </Button6>
-                  </Redirect>
+                    </Redirect>
                 </Container>
             </BaseSection>
         </>
