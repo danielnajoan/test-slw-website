@@ -33,7 +33,7 @@ export const UnderlineContainer = styled.div`
 
 export const Underline = styled.div`
     width: 100px;
-    height: 10px;
+    border: 4px solid #FFCAC2;
     background-color: #FFCCCC;
     border-radius: 25px;
 `;
@@ -80,8 +80,8 @@ export const CardIcon = styled.img`
     align-items: center;
     height: auto; 
     width: auto;
-    max-width: 220px; 
-    max-height: 350px;
+    max-width: 180px; 
+    max-height: 300px;
     padding: 0.5rem;
     @media screen and (max-width: 550px) {
         max-width: 160px; 

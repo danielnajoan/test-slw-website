@@ -7,7 +7,11 @@ import spotifyIcon from '../../images/Spotify Icon.png';
 import instagramIcon from '../../images/Instagram Icon.png';
 import youtubeIcon from '../../images/Youtube Icon.png';
 
-import infoImg from '../../images/White.png';
+import arrowPointToRight from '../../images/arrow-pointing-to-right.png';
+import programOne from '../../images/Program-1.png';
+import programTwo from '../../images/Program-2.png';
+import programThree from '../../images/Program-3.png';
+import programFour from '../../images/Program-4.png';
 
 import impactOne from '../../images/Impact-1.png';
 import impactTwo from '../../images/Impact-2.png';
@@ -16,6 +20,8 @@ import impactThree from '../../images/Impact-3.png';
 import advisorLogo from '../../images/Mind Miracle Center.png';
 
 import imageLogo from '../../images/Mind Miracle Center.webp';
+
+import infoImg from '../../images/White.png';
 
 export const coverObj = {
   headline: 'Do you want to start loving yourself?',
@@ -50,6 +56,44 @@ export const eventObj = {
             paragraph: 'May 29th, 2020 -  8:00 PM',
             urlButton: '',
             buttonLabel: 'Join',
+        },
+    ],
+}
+
+export const programsObj = {
+    headline: 'See our programs',
+    programsData: [
+        {
+            id: 1,
+            cardHeadline: 'Virtual Support Group',
+            iconUrl: arrowPointToRight,
+            iconName: 'arrowPointToRight',
+            imageUrl: programOne,
+            imageName: 'programOne',
+        },
+        {
+            id: 2,
+            cardHeadline: 'Self-Love Bootcamp',
+            iconUrl: arrowPointToRight,
+            iconName: 'arrowPointToRight',
+            imageUrl: programTwo,
+            imageName: 'programTwo',
+        },
+        {
+            id: 3,
+            cardHeadline: 'SLW Goes to School',
+            iconUrl: arrowPointToRight,
+            iconName: 'arrowPointToRight',
+            imageUrl: programThree,
+            imageName: 'programThree',
+        },
+        {
+            id: 4,
+            cardHeadline: 'Creative Content',
+            iconUrl: arrowPointToRight,
+            iconName: 'arrowPointToRight',
+            imageUrl: programFour,
+            imageName: 'programFour',
         },
     ],
 }

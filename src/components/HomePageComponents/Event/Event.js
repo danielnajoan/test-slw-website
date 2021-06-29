@@ -2,6 +2,7 @@ import React, { useState, memo } from 'react';
 import { Container, Button10 } from '../../../globalStyles';
 import {
     BaseSection,
+    WrapperSection,
     MainSection,
     Headline,
     CardContainer,
@@ -24,8 +25,9 @@ const Event = ({ headline, eventsData }) => {
     return (
         <>
             <BaseSection>
-                <MainSection>
                 <Container>
+                <WrapperSection>
+                <MainSection>
                     <Headline>{headline}</Headline>
                     <CardContainer>
                     {cards.map((cardData) => {
@@ -59,8 +61,10 @@ const Event = ({ headline, eventsData }) => {
                         );
                     })}
                     </CardContainer>
-                </Container>
                 </MainSection>
+                </WrapperSection>
+                
+                </Container>
             </BaseSection>
         </>
     )

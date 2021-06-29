@@ -15,7 +15,7 @@ import {
     CardDesc,
 } from './InstagramAPI.elements';
 
-const InstagramAPI = () => {
+const InstagramAPI = ({  }) => {
     return (
         <>
             <BaseSection>
