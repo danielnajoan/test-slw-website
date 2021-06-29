@@ -9,6 +9,10 @@ import youtubeIcon from '../../images/Youtube Icon.png';
 
 import infoImg from '../../images/White.png';
 
+import impactOne from '../../images/Impact-1.png';
+import impactTwo from '../../images/Impact-2.png';
+import impactThree from '../../images/Impact-3.png';
+
 import advisorLogo from '../../images/Mind Miracle Center.png';
 
 import imageLogo from '../../images/Mind Miracle Center.webp';
@@ -46,6 +50,33 @@ export const eventObj = {
             paragraph: 'May 29th, 2020 -  8:00 PM',
             urlButton: '',
             buttonLabel: 'Join',
+        },
+    ],
+}
+
+export const impactObj = {
+    headline: 'Our Impact',
+    impactsData: [
+        {
+            id: 1,
+            imageUrl: impactOne,
+            imageName: 'impactOne',
+            cardTitle: '33,500+',
+            cardDesc: 'Likes on Instagram',
+        },
+        {
+            id: 2,
+            imageUrl: impactTwo,
+            imageName: 'impactTwo',
+            cardTitle: '272,000+',
+            cardDesc: 'Impressions',
+        },
+        {
+            id: 3,
+            imageUrl: impactThree,
+            imageName: 'impactThree',
+            cardTitle: '1,800+',
+            cardDesc: 'Program Attendees',
         },
     ],
 }

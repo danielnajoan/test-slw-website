@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const BaseSection = styled.div`
-    padding: 100px 0;
+    padding: 50px 0;
     background: #FFFFFF;
     align-items: center;
     text-align: center;

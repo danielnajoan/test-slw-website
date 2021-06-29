@@ -11,7 +11,7 @@ export const Headline = styled.h1`
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
-    line-height: 38px;
+    line-height: 115.2%;
     color: #091F6B;
     margin-bottom: 2rem;
     padding: 1rem;

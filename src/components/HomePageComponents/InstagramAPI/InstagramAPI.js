@@ -13,10 +13,9 @@ import {
     WrapperDesc,
     CardHeadline,
     CardDesc,
-} from './Impact.elements';
+} from './InstagramAPI.elements';
 
-function Impact({ headline, impactsData }) {
-    const [cards] = useState(impactsData);
+const InstagramAPI = () => {
     return (
         <>
             <BaseSection>
@@ -30,17 +29,6 @@ function Impact({ headline, impactsData }) {
                     const { id, imageUrl, imageName, cardTitle, cardDesc } = valueData;
                     return (
                         <CardSec key={id}>
-                            <CardInfo>
-                                    <CardIcon src={imageUrl} alt={imageName}/>
-                                <DescriptionSec>
-                                    <WrapperDesc>
-                                        <CardHeadline>{cardTitle}</CardHeadline>
-                                    </WrapperDesc>
-                                    <WrapperDesc>
-                                        <CardDesc>{cardDesc}</CardDesc>
-                                    </WrapperDesc>
-                                </DescriptionSec>
-                            </CardInfo>
                         </CardSec>
                         );
                     })}
@@ -49,6 +37,6 @@ function Impact({ headline, impactsData }) {
             </BaseSection>
         </>
     )
-};
+}
 
-export default memo(Impact);
+export default memo(InstagramAPI);
