@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { Container } from '../../globalStyles';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
   background: #fff;
@@ -28,13 +28,30 @@ export const NavLogo = styled(Link)`
   font-style: normal;
   font-weight: normal;
   line-height: 87.9%;
-  color: #001A49;
-  justify-self: flex-start;
+  color: #001a49;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
+  @media screen and (max-width: 415px) {
+    font-size: 1.4rem;
+    width: 50%;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 1.1rem;
+  }
+`;
+
+export const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  word-wrap: normal;
+  justify-self: flex-start;
 `;
 
 export const MobileIcon = styled.div`
@@ -64,26 +81,26 @@ export const NavMenu = styled.ul`
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: ${({ click }) => (click ? 0 : '-100%')};
+    left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #FFF1E5;
+    background: #fff1e5;
   }
 `;
 
 export const NavItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
-  
+
   &:hover {
     border-bottom: 2px solid #4b59f7;
   }
 
   @media screen and (max-width: 960px) {
     width: 100%;
-    border-top: 1px solid #F49790;
-    border-bottom: 1px solid #F49790;
-    
+    border-top: 1px solid #f49790;
+    border-bottom: 1px solid #f49790;
+
     &:hover {
       border: none;
       background: rgba(255, 204, 204, 0.5);
@@ -97,7 +114,7 @@ export const NavLinks = styled(Link)`
   font-weight: 600;
   font-size: 20px;
   line-height: 115.2%;
-  color: #3858CC;
+  color: #3858cc;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -108,11 +125,10 @@ export const NavLinks = styled(Link)`
     font-size: 26px;
     padding: 1rem;
     width: 100%;
-    color: #FF565E;
+    color: #ff565e;
     text-align: left;
     &:hover {
       transition: all 0.3s ease;
-      
     }
   }
 `;
