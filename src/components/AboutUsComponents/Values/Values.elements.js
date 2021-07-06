@@ -30,6 +30,9 @@ export const Headline = styled.h1`
   @media screen and (max-width: 541px) {
     font-size: 1.9rem;
   }
+  @media screen and (max-width: 321px) {
+    font-size: 1.8rem;
+  }
 `;
 
 export const UnderlineContainer = styled.div`
@@ -101,6 +104,9 @@ export const CardIcon = styled.img`
   @media screen and (max-width: 415px) {
     max-width: 160px;
   }
+  @media screen and (max-width: 321px) {
+    max-width: 140px;
+  }
 `;
 
 export const DescriptionSec = styled.div`
@@ -133,6 +139,9 @@ export const CardHeadline = styled.h2`
   @media screen and (max-width: 415px) {
     font-size: 1.4rem;
   }
+  @media screen and (max-width: 321px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const CardDesc = styled.p`
@@ -158,5 +167,14 @@ export const CardDesc = styled.p`
   @media screen and (max-width: 415px) {
     font-size: 0.9rem;
     width: 65%;
+  }
+  @media screen and (max-width: 321px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 321px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 281px) {
+    width: 80%;
   }
 `;
