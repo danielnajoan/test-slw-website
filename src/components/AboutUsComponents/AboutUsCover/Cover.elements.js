@@ -24,8 +24,8 @@ export const Headline = styled.h1`
   line-height: 119.6%;
   letter-spacing: 0.01em;
   color: #ff866b;
-
   margin-bottom: 24px;
+
   @media screen and (max-width: 541px) {
     font-size: 2.8rem;
   }

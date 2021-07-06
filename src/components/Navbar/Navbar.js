@@ -23,8 +23,10 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#002FA6" }}>
         <Nav>
           <NavbarContainer>
-            <LogoWrapper to="/" onClick={closeMobileMenu}>
-              <NavLogo>self love warrior</NavLogo>
+            <LogoWrapper>
+              <NavLogo to="/" onClick={closeMobileMenu}>
+                self love warrior
+              </NavLogo>
             </LogoWrapper>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

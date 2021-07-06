@@ -1,5 +1,4 @@
 import React, { memo } from "react";
-import { Link } from "react-router-dom";
 import { Container, Button2 } from "../../../globalStyles";
 import {
   StoryHeader,
@@ -8,9 +7,12 @@ import {
   Underline,
   StorySection,
   StoryHeadline,
+  Wrapper,
   StoryParagraph,
-  ButtonHeadline,
   ViewTeam,
+  ButtonHeadline,
+  ButtonWrapper,
+  ButtonLink,
 } from "./OurStory.elements";
 
 const OurStory = ({
@@ -33,23 +35,31 @@ const OurStory = ({
       <StorySection>
         <Container>
           <StoryHeadline>{headline}</StoryHeadline>
-          <StoryParagraph>{paragraph1}</StoryParagraph>
-          <StoryParagraph>{paragraph2}</StoryParagraph>
-          <StoryParagraph>{paragraph3}</StoryParagraph>
+          <Wrapper>
+            <StoryParagraph>{paragraph1}</StoryParagraph>
+          </Wrapper>
+          <Wrapper>
+            <StoryParagraph>{paragraph2}</StoryParagraph>
+          </Wrapper>
+          <Wrapper>
+            <StoryParagraph>{paragraph3}</StoryParagraph>
+          </Wrapper>
           <ViewTeam>
             <ButtonHeadline>{btnHeadline}</ButtonHeadline>
-            <Link to="/team">
-              <Button2
-                primary={true}
-                colLabel={true}
-                btnBorder={true}
-                btnPadding={true}
-                btnFontSize={true}
-                btnWidth={false}
-              >
-                {buttonLabel}
-              </Button2>
-            </Link>
+            <ButtonWrapper>
+              <ButtonLink to="/team">
+                <Button2
+                  primary={true}
+                  colLabel={true}
+                  btnBorder={true}
+                  btnPadding={true}
+                  btnFontSize={true}
+                  btnWidth={false}
+                >
+                  {buttonLabel}
+                </Button2>
+              </ButtonLink>
+            </ButtonWrapper>
           </ViewTeam>
         </Container>
       </StorySection>

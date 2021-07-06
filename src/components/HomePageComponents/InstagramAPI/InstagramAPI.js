@@ -39,7 +39,7 @@ const InstagramAPI = ({
                 <CardSection key={id}>
                   <CardInfo>
                     <blockquote
-                      class={"instagram-media"}
+                      className={"instagram-media"}
                       data-instgrm-permalink={instagramAPI}
                     ></blockquote>
                   </CardInfo>
