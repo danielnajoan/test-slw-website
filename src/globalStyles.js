@@ -20,6 +20,7 @@ export const Container = styled.div`
   padding-left: 20px;
 `;
 
+//Contact Form and Info Partner Section in Contact Us Page
 export const Button1 = styled.button`
   font-family: Nunito;
   font-style: normal;
@@ -29,9 +30,10 @@ export const Button1 = styled.button`
   color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "#4962BB")};
   border: ${({ btnBorder }) =>
     btnBorder ? "2px solid #3858CC" : "2px solid #4962BB"};
-  padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "10px 34px")};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? "18px" : "18px")};
-  border-radius: 100px;
+  padding: ${({ btnPadding }) =>
+    btnPadding ? "0.6rem 2.2rem" : "0.6rem 2.2rem"};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? "1.2rem" : "1.2rem")};
+  border-radius: 8.40803px;
   width: 400px;
   white-space: nowrap;
   outline: none;
@@ -44,14 +46,23 @@ export const Button1 = styled.button`
     border: ${({ btnBorder }) =>
       btnBorder ? "2px solid #4962BB" : "2px solid #3858CC"};
   }
-
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 541px) {
+    font-size: 1.1rem;
     width: 100%;
+    border-radius: 100px;
   }
-
-  @media screen and (max-width: 320px) {
-    font-size: 12px;
-    padding: 8px 30px;
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.1rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.7rem;
   }
 `;
 //For Story Section
@@ -76,7 +87,6 @@ export const Button2 = styled.button`
     background-color: ${({ primary }) => (primary ? "transparent" : "none")};
     color: ${({ colLabel }) => (colLabel ? "#FF866B" : "none")};
     border: ${({ btnBorder }) => (btnBorder ? "2px solid #FF866B" : "none")};
-    padding: ${({ btnPadding }) => (btnPadding ? "0.6rem 2.2rem" : "none")};
   }
 
   @media screen and (max-width: 541px) {

@@ -188,10 +188,12 @@ export const ButtonHeadline = styled.h1`
     font-size: 1rem;
   }
 `;
+
 export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
+
 export const ButtonLink = styled(Link)`
   width: 75%;
 `;
