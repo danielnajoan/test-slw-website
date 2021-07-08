@@ -8,7 +8,7 @@ import {
   CardContainer,
   CardSection,
   CardInfo,
-  InstagramApiContainer,
+  // InstagramApiContainer,
   ButtonRedirect,
 } from "./InstagramAPI.elements";
 
@@ -35,7 +35,10 @@ const InstagramAPI = ({
           </UnderlineContainer>
           <CardContainer>
             {cards.map((instagramAPIData) => {
-              const { id, instagramAPI } = instagramAPIData;
+              const {
+                id,
+                // instagramAPI
+              } = instagramAPIData;
               return (
                 <CardSection key={id}>
                   <CardInfo>

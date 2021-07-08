@@ -320,8 +320,8 @@ export const Button10 = styled.button`
   background-color: ${({ primary }) => (primary ? "transparent" : "none")};
   color: ${({ colLabel }) => (colLabel ? "#5F71AC" : "none")};
   border: ${({ btnBorder }) => (btnBorder ? "2px solid #5F71AC" : "none")};
-  padding: ${({ btnPadding }) => (btnPadding ? "5px 34px" : "none")};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? "18px" : "none")};
+  padding: ${({ btnPadding }) => (btnPadding ? "0.4rem 2.2rem" : "none")};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? "1.2rem" : "none")};
   border-radius: 100px;
   width: auto;
   white-space: nowrap;
@@ -332,6 +332,25 @@ export const Button10 = styled.button`
     background-color: ${({ primary }) => (primary ? "#5F71AC" : "none")};
     color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "none")};
     border: ${({ btnBorder }) => (btnBorder ? "2px solid #5F71AC" : "none")};
+  }
+
+  @media screen and (max-width: 541px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+    padding: 0.2rem 2rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.1rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.7rem;
   }
 `;
 
