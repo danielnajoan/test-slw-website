@@ -106,7 +106,8 @@ export const Button2 = styled.button`
     font-size: 0.7rem;
   }
 `;
-//For Cover Section
+
+//For Home Cover Section and Get Involved Cover Card Section
 export const Button3 = styled.button`
   font-family: Nunito;
   font-style: normal;
@@ -116,16 +117,31 @@ export const Button3 = styled.button`
   color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "#091F6B")};
   border: ${({ btnBorder }) =>
     btnBorder ? "2px solid #3858CC" : "2px solid #FFFFFF"};
-  padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "10px 34px")};
+  padding: ${({ btnPadding }) =>
+    btnPadding ? "0.6rem 2.2rem" : "0.6rem 2.2rem"};
   font-size: ${({ btnFontSize }) => (btnFontSize ? "1.2rem" : "1.2rem")};
   border-radius: 100px;
-  width: auto;
+  width: ${({ btnWidth }) => (btnWidth ? "180px" : "auto")};
   white-space: nowrap;
   outline: none;
   cursor: pointer;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 541px) {
+    font-size: 1.1rem;
     width: 100%;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.1rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.7rem;
   }
 `;
 

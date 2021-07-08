@@ -8,7 +8,8 @@ import {
   CardContainer,
   CardSection,
   CardInfo,
-  Redirect,
+  InstagramApiContainer,
+  ButtonRedirect,
 } from "./InstagramAPI.elements";
 
 const InstagramAPI = ({
@@ -38,16 +39,16 @@ const InstagramAPI = ({
               return (
                 <CardSection key={id}>
                   <CardInfo>
-                    <blockquote
+                    {/* <InstagramApiContainer
                       className={"instagram-media"}
                       data-instgrm-permalink={instagramAPI}
-                    ></blockquote>
+                    ></InstagramApiContainer> */}
                   </CardInfo>
                 </CardSection>
               );
             })}
           </CardContainer>
-          <Redirect href={urlButton}>
+          <ButtonRedirect href={urlButton}>
             <Button6
               primary={false}
               colLabel={false}
@@ -57,7 +58,7 @@ const InstagramAPI = ({
             >
               {buttonLabel}
             </Button6>
-          </Redirect>
+          </ButtonRedirect>
         </Container>
       </BaseSection>
     </>
