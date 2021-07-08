@@ -2,6 +2,7 @@ import React, { memo } from "react";
 import { Container } from "../../../globalStyles";
 import {
   BaseSection,
+  Wrapper,
   Headline,
   ImageContainer,
   FrameSection,
@@ -12,7 +13,9 @@ const Dial = ({ headline }) => {
     <>
       <BaseSection>
         <Container>
-          <Headline>{headline}</Headline>
+          <Wrapper>
+            <Headline>{headline}</Headline>
+          </Wrapper>
           <ImageContainer>
             <FrameSection>
               <iframe
