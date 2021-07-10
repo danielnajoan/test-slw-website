@@ -9,6 +9,7 @@ import {
   CardSection,
   CardInfo,
   // InstagramApiContainer,
+  ButtonWrapper,
   ButtonRedirect,
 } from "./InstagramAPI.elements";
 
@@ -34,7 +35,7 @@ const InstagramAPI = ({
             <Underline></Underline>
           </UnderlineContainer>
           <CardContainer>
-            {cards.map((instagramAPIData) => {
+            {/* {cards.map((instagramAPIData) => {
               const {
                 id,
                 // instagramAPI
@@ -42,26 +43,28 @@ const InstagramAPI = ({
               return (
                 <CardSection key={id}>
                   <CardInfo>
-                    {/* <InstagramApiContainer
+                    <InstagramApiContainer
                       className={"instagram-media"}
                       data-instgrm-permalink={instagramAPI}
-                    ></InstagramApiContainer> */}
+                    ></InstagramApiContainer>
                   </CardInfo>
                 </CardSection>
               );
-            })}
+            })} */}
           </CardContainer>
-          <ButtonRedirect href={urlButton}>
-            <Button6
-              primary={false}
-              colLabel={false}
-              btnBorder={false}
-              btnPadding={false}
-              btnFontSize={false}
-            >
-              {buttonLabel}
-            </Button6>
-          </ButtonRedirect>
+          <ButtonWrapper>
+            <ButtonRedirect href={urlButton}>
+              <Button6
+                primary={false}
+                colLabel={false}
+                btnBorder={false}
+                btnPadding={false}
+                btnFontSize={false}
+              >
+                {buttonLabel}
+              </Button6>
+            </ButtonRedirect>
+          </ButtonWrapper>
         </Container>
       </BaseSection>
     </>

@@ -4,6 +4,10 @@ export const BaseSection = styled.div`
   padding: 50px 0;
   background: #ffffff;
   text-align: center;
+
+  @media screen and (max-width: 321px) {
+    padding: 30px 0;
+  }
 `;
 
 export const WrapperSection = styled.div`

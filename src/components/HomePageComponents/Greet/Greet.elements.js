@@ -74,6 +74,7 @@ export const Paragraph = styled.p`
   line-height: 33px;
   color: #5f71ac;
   width: 50%;
+
   @media screen and (max-width: 1024px) {
     font-size: 1.4rem;
   }

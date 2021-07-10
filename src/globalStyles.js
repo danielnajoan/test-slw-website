@@ -167,7 +167,6 @@ export const Button4 = styled.button`
     background-color: ${({ primary }) => (primary ? "transparent" : "none")};
     color: ${({ colLabel }) => (colLabel ? "#6C8FFF" : "none")};
     border: ${({ btnBorder }) => (btnBorder ? "2px solid #6C8FFF" : "none")};
-    padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "none")};
   }
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -178,7 +177,7 @@ export const Button4 = styled.button`
   }
 `;
 
-//For Information Section
+//For Information Section at Home Page
 export const Button5 = styled.button`
   font-family: Nunito;
   font-style: normal;
@@ -188,8 +187,9 @@ export const Button5 = styled.button`
   color: ${({ colLabel }) => (colLabel ? "#1B3EBC" : "#FFFFFF")};
   border: ${({ btnBorder }) =>
     btnBorder ? "2px solid #FFFFFF" : "2px solid #FFFFFF"};
-  padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "10px 34px")};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? "18px" : "18px")};
+  padding: ${({ btnPadding }) =>
+    btnPadding ? "0.6rem 2.2rem" : "0.6rem 2.2rem"};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? "1.2rem" : "1.2rem")};
   border-radius: 100px;
   width: 250px;
   white-space: nowrap;
@@ -202,10 +202,24 @@ export const Button5 = styled.button`
     color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "#1B3EBC")};
     border: ${({ btnBorder }) =>
       btnBorder ? "2px solid #1B3EBC" : "2px solid #FFFFFF"};
-    padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "10px 34px")};
   }
-  @media screen and (max-width: 960px) {
+
+  @media screen and (max-width: 541px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.9rem;
     width: 100%;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.1rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.7rem;
   }
 `;
 
@@ -219,8 +233,9 @@ export const Button6 = styled.button`
   color: ${({ colLabel }) => (colLabel ? "#3858CC" : "#FFFFFF")};
   border: ${({ btnBorder }) =>
     btnBorder ? "2px solid #3858CC" : "2px solid #3858CC"};
-  padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "10px 34px")};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? "18px" : "18px")};
+  padding: ${({ btnPadding }) =>
+    btnPadding ? "0.6rem 2.2rem" : "0.6rem 2.2rem"};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? "1.2rem" : "1.2rem")};
   border-radius: 100px;
   width: 220px;
   white-space: nowrap;
@@ -232,6 +247,24 @@ export const Button6 = styled.button`
     color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "#3858CC")};
     border: ${({ btnBorder }) =>
       btnBorder ? "2px solid #5373E3" : "2px solid #5373E3"};
+  }
+
+  @media screen and (max-width: 541px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.1rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.7rem;
   }
 `;
 
@@ -256,7 +289,6 @@ export const Button7 = styled.button`
     background-color: ${({ primary }) => (primary ? "#FFFFFF" : "none")};
     color: ${({ colLabel }) => (colLabel ? "#3858CC" : "none")};
     border: ${({ btnBorder }) => (btnBorder ? "2px solid #FFFFFF" : "none")};
-    padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "none")};
   }
 `;
 
@@ -281,7 +313,6 @@ export const Button8 = styled.button`
     background-color: ${({ primary }) => (primary ? "transparent" : "none")};
     color: ${({ colLabel }) => (colLabel ? "#325EFC" : "none")};
     border: ${({ btnBorder }) => (btnBorder ? "2px solid #325EFC" : "none")};
-    padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "none")};
   }
 `;
 
