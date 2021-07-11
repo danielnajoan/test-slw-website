@@ -8,7 +8,7 @@ import {
   CardContainer,
   CardSection,
   CardInfo,
-  // InstagramApiContainer,
+  InstagramApiContainer,
   ButtonWrapper,
   ButtonRedirect,
 } from "./InstagramAPI.elements";

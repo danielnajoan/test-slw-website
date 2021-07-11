@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const BaseSection = styled.div`
   padding: 50px 0;
@@ -74,13 +76,21 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const CardSection = styled.div`
+export const CardSection = styled(HashLink)`
+  text-decoration: none;
   width: 25rem;
   margin: 1rem;
   text-align: left;
   background: #ffffff;
   box-shadow: 0px 4px 30px rgba(67, 75, 101, 0.15);
   border-radius: 18px;
+
+  &:hover {
+    transform: scale(1.06);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+
   @media screen and (max-width: 415px) {
     width: 100%;
     margin: 1rem 0rem;

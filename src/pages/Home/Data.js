@@ -66,6 +66,7 @@ export const programsObj = {
   programsData: [
     {
       id: 1,
+      routeLink: "#virtual",
       cardHeadline: "Virtual Support Group",
       iconUrl: arrowPointToRight,
       iconName: "arrowPointToRight",
@@ -74,6 +75,7 @@ export const programsObj = {
     },
     {
       id: 2,
+      routeLink: "#bootcamp",
       cardHeadline: "Self-Love Bootcamp",
       iconUrl: arrowPointToRight,
       iconName: "arrowPointToRight",
@@ -82,6 +84,7 @@ export const programsObj = {
     },
     {
       id: 3,
+      routeLink: "#school",
       cardHeadline: "SLW Goes to School",
       iconUrl: arrowPointToRight,
       iconName: "arrowPointToRight",
@@ -90,6 +93,7 @@ export const programsObj = {
     },
     {
       id: 4,
+      routeLink: "#gameNight",
       cardHeadline: "Creative Content",
       iconUrl: arrowPointToRight,
       iconName: "arrowPointToRight",
@@ -175,7 +179,7 @@ export const communityObj = {
       link: "https://www.youtube.com/channel/UCxkUEZlfGOEntGoTnzxLq0w",
       cardTitle: "Youtube",
       cardTextDesc: "Watch our previous webinars and fun tea times again!",
-      buttonLabel: "VIsit Youtube",
+      buttonLabel: "Visit Youtube",
     },
     {
       id: 3,

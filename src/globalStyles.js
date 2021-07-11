@@ -8,6 +8,9 @@ const GlobalStyle = createGlobalStyle`
   font-family: Nunito;
   font-style: normal;
  } 
+ html {
+   scroll-behavior: smooth;
+ }
 `;
 
 export const Container = styled.div`
@@ -154,8 +157,8 @@ export const Button4 = styled.button`
   background-color: ${({ primary }) => (primary ? "#6C8FFF" : "none")};
   color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "none")};
   border: ${({ btnBorder }) => (btnBorder ? "2px solid #6C8FFF" : "none")};
-  padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "none")};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? "13px" : "none")};
+  padding: ${({ btnPadding }) => (btnPadding ? "0.4rem 2rem" : "none")};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? "1rem" : "none")};
   border-radius: 12px;
   width: auto;
   white-space: nowrap;
@@ -168,12 +171,23 @@ export const Button4 = styled.button`
     color: ${({ colLabel }) => (colLabel ? "#6C8FFF" : "none")};
     border: ${({ btnBorder }) => (btnBorder ? "2px solid #6C8FFF" : "none")};
   }
-  @media screen and (max-width: 960px) {
+
+  @media screen and (max-width: 541px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.8rem;
     width: 100%;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 321px) {
     font-size: 0.7rem;
-    padding: 0.05rem;
+    padding: 0.4rem 0.1rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.6rem;
   }
 `;
 

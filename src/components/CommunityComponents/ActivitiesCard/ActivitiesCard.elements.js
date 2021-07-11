@@ -1,84 +1,145 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CardContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-    @media screen and (max-width: 960px) {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  @media screen and (max-width: 769px) {
+    padding: 0.1rem;
+    width: 100%;
+  }
 `;
 
 export const CardSec = styled.div`
-    width: 30%;
-    height: 30rem;
-    margin: 1rem;
-    text-align: left;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    @media screen and (max-width: 920px) {
-        margin: 1rem;
-        text-align: center;
-        height: 30rem;
-        width: 50%;
-    }
-    @media screen and (max-width: 550px) {
-        width: 100%;
-    }
+  width: 20%;
+  height: 25rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  flex: 1;
+
+  @media screen and (max-width: 769px) {
+    height: 18rem;
+  }
+  @media screen and (max-width: 541px) {
+    height: 25rem;
+    width: 100%;
+    flex: auto;
+    text-align: center;
+  }
 `;
 
 export const CardInfo = styled.div`
-    padding: 1rem;
+  padding: 1rem;
 `;
 
 export const ImageContainer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  @media screen and (max-width: 541px) {
     justify-content: center;
-    @media screen and (max-width: 550px) {
-        display: flex;
-    }
+  }
 `;
 
 export const CardImage = styled.img`
-    border: 0;
-    align-items: center;
-    height: auto; 
-    width: auto;
-    max-width: 320px; 
-    max-height: 350px;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    @media screen and (max-width: 320px) {
-        max-width: 160px;
-    }
+  border: 0;
+  align-items: center;
+  height: auto;
+  width: auto;
+  max-width: 240px;
+  max-height: 350px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 180px;
+  }
+  @media screen and (max-width: 769px) {
+    max-width: 140px;
+  }
+  @media screen and (max-width: 541px) {
+    max-width: 260px;
+  }
+  @media screen and (max-width: 321px) {
+    max-width: 160px;
+  }
 `;
 
 export const CardHeadline = styled.h2`
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.3rem;
-    line-height: 33px;
-    letter-spacing: 0.01em;
-    color: #FF565E;
-    margin-bottom:0.5rem;
-    @media screen and (max-width: 550px) {
-        text-align: center;
-    }
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  color: #ff565e;
+  margin-bottom: 0.5rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 541px) {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.9rem;
+    line-height: 23px;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.8rem;
+  }
+`;
+
+export const CardWrapper = styled.div`
+  display: flex;
+  word-wrap: normal;
+  @media screen and (max-width: 541px) {
+    justify-content: center;
+  }
 `;
 
 export const CardDesc = styled.p`
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 23px;
-    letter-spacing: 0.01em;
-    color: #091F6B;
-    @media screen and (max-width: 550px) {
-        font-size: 1.2rem;
-    }
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #091f6b;
+  width: 90%;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 0.6rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 541px) {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.8rem;
+  }
 `;

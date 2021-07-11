@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 
 export const CarouselSection = styled(Carousel)`
   .rec.rec-pagination {
     visibility: hidden;
-    
-    @media screen and (max-width: 550px) {
-      visibility:visible;
+
+    @media screen and (max-width: 541px) {
+      visibility: visible;
     }
   }
   /* square buttons */
@@ -14,27 +14,27 @@ export const CarouselSection = styled(Carousel)`
     border-radius: 0;
     box-shadow: none;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: #ffffff;
   }
   /* round buttons on hover */
   .rec.rec-arrow:hover {
-    background-color: #002FA6;
+    background-color: #002fa6;
   }
   /* pagination dot */
-  .rec.rec-dot{
-    @media screen and (max-width: 550px) {
+  .rec.rec-dot {
+    @media screen and (max-width: 541px) {
       width: 19px;
       height: 19px;
       box-shadow: none;
-      background: #FFFFFF;
-      border: 1px solid #8AA3FF;
+      background: #ffffff;
+      border: 1px solid #8aa3ff;
       box-sizing: border-box;
     }
   }
-  .rec.rec-dot.rec.rec-dot_active{
-    @media screen and (max-width: 550px) {
-      background: #B9C8FF;
-      border: 1px solid #8AA3FF;
+  .rec.rec-dot.rec.rec-dot_active {
+    @media screen and (max-width: 541px) {
+      background: #b9c8ff;
+      border: 1px solid #8aa3ff;
       box-sizing: border-box;
     }
   }
@@ -51,10 +51,10 @@ export const CarouselSection = styled(Carousel)`
 `;
 
 export const CardSec = styled.div`
-  width: 280px;
+  width: 300px;
   padding: 2rem;
   margin: 12px;
-  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  background: linear-gradient(0deg, #ffffff, #ffffff);
   box-shadow: 0px 4.72398px 16.5339px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 
@@ -63,49 +63,71 @@ export const CardSec = styled.div`
     transition: all 0.3s ease-out;
   }
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 769px) {
     width: 100%;
     padding: 1rem;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 321px) {
     padding: 0.5rem;
+    margin: 0px;
   }
 `;
 
-export const CardInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  max-height: 25rem;
-  align-items: center;
-  text-align: center;
-
-`;
+export const CardInfo = styled.div``;
 
 export const CardImageContainer = styled.div`
-    height: 10rem;
-    padding: 0.5rem;
-    @media screen and (max-width: 550px) {
-      height: 8rem;
-    }
-    @media screen and (max-width: 320px) {
-      height: 6rem;
-    }
+  height: 10rem;
+  padding: 0.5rem;
+
+  @media screen and (max-width: 769px) {
+    height: 9rem;
+  }
+  @media screen and (max-width: 541px) {
+    height: 8rem;
+  }
+  @media screen and (max-width: 415px) {
+    height: 7rem;
+  }
+  @media screen and (max-width: 376px) {
+    height: 6rem;
+  }
+  @media screen and (max-width: 321px) {
+    height: 5rem;
+  }
+  @media screen and (max-width: 281px) {
+    height: 4rem;
+  }
 `;
 
 export const CardIcon = styled.img`
-    border: 0;
-    align-items: center;
-    height: auto; 
-    width: auto;
-    max-width: 150px;
-    max-height: 350px;
-    @media screen and (max-width: 550px) {
-      max-width: 120px;
-    }
-    @media screen and (max-width: 320px) {
-      max-width: 90px;
-    }
+  border: 0;
+  align-items: center;
+  height: auto;
+  width: auto;
+  max-width: 150px;
+  max-height: 350px;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 140px;
+  }
+  @media screen and (max-width: 769px) {
+    max-width: 130px;
+  }
+  @media screen and (max-width: 541px) {
+    max-width: 120px;
+  }
+  @media screen and (max-width: 415px) {
+    max-width: 110px;
+  }
+  @media screen and (max-width: 376px) {
+    max-width: 100px;
+  }
+  @media screen and (max-width: 321px) {
+    max-width: 90px;
+  }
+  @media screen and (max-width: 281px) {
+    max-width: 70px;
+  }
 `;
 
 export const CardHeadline = styled.h3`
@@ -114,26 +136,34 @@ export const CardHeadline = styled.h3`
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 32px;
-  color: #091F6B;
+  color: #091f6b;
   letter-spacing: 0.01em;
-  margin-top: 1rem;
   margin-bottom: 1rem;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 769px) {
+    font-size: 1.4rem;
+  }
+  @media screen and (max-width: 541px) {
     font-size: 1.3rem;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 415px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 321px) {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 1rem;
   }
+  @media screen and (max-width: 281px) {
+    font-size: 0.9rem;
+  }
 `;
 export const CardDesc = styled.div`
-  width: 90%;
-  color: #4962BB;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  @media screen and (max-width: 550px) {
+  width: 100%;
+  color: #4962bb;
+  @media screen and (max-width: 541px) {
     width: 100%;
   }
 `;
@@ -146,16 +176,31 @@ export const CardText = styled.p`
   line-height: 135.94%;
   height: 5rem;
   word-wrap: break-word;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 541px) {
     font-size: 0.9rem;
   }
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 415px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.7rem;
+  }
+  @media screen and (max-width: 321px) {
     height: 3rem;
     font-size: 0.6rem;
   }
+  @media screen and (max-width: 281px) {
+    font-size: 0.5rem;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
 
 export const CardButton = styled.a`
   text-decoration: none;
-  margin-top: 1rem;
 `;

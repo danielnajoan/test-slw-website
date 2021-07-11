@@ -1,36 +1,40 @@
-import React, { useState, memo } from 'react';
+import React, { useState, memo } from "react";
 import {
-    CardContainer,
-    CardSec,
-    CardInfo,
-    ImageContainer,
-    CardImage,
-    CardHeadline,
-    CardDesc,
-} from './ActivitiesCard.elements';
+  CardContainer,
+  CardSec,
+  CardInfo,
+  ImageContainer,
+  CardImage,
+  CardHeadline,
+  CardWrapper,
+  CardDesc,
+} from "./ActivitiesCard.elements";
 
 const ActivitiesCard = ({ activitiesData }) => {
-    const [activitiesCards] = useState(activitiesData);
-    return (
-        <>
-            <CardContainer>
-            {activitiesCards.map((cardData) => {
-                const { id, cardTitle, imageUrl, imageName, cardDesc } = cardData;
-                return (
-                    <CardSec key={id}>
-                        <CardInfo>
-                            <CardHeadline>{cardTitle}</CardHeadline>
-                            <ImageContainer>
-                                <CardImage src={imageUrl} alt={imageName}/>
-                            </ImageContainer>
-                            <CardDesc>{cardDesc}</CardDesc>
-                        </CardInfo>
-                    </CardSec>
-                );
-            })}
-            </CardContainer>
-        </>
-    )
-}
+  const [activitiesCards] = useState(activitiesData);
+  return (
+    <>
+      <CardContainer>
+        {activitiesCards.map((cardData) => {
+          const { id, className, cardTitle, imageUrl, imageName, cardDesc } =
+            cardData;
+          return (
+            <CardSec key={id} id={className}>
+              <CardInfo>
+                <CardHeadline>{cardTitle}</CardHeadline>
+                <ImageContainer>
+                  <CardImage src={imageUrl} alt={imageName} />
+                </ImageContainer>
+                <CardWrapper>
+                  <CardDesc>{cardDesc}</CardDesc>
+                </CardWrapper>
+              </CardInfo>
+            </CardSec>
+          );
+        })}
+      </CardContainer>
+    </>
+  );
+};
 
 export default memo(ActivitiesCard);

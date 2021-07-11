@@ -32,14 +32,16 @@ const Programs = ({ headline, programsData }) => {
             {cards.map((programData) => {
               const {
                 id,
+                routeLink,
                 cardHeadline,
                 iconUrl,
                 iconName,
                 imageUrl,
                 imageName,
               } = programData;
+              console.log(routeLink);
               return (
-                <CardSection key={id}>
+                <CardSection key={id} to={"/community" + routeLink}>
                   <CardInfo>
                     <CardRow>
                       <CardColumn colWidth={true}>
