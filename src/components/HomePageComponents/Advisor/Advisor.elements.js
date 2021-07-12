@@ -4,6 +4,13 @@ export const BaseSection = styled.div`
   padding: 40px 0px;
   background: #ffffff;
   text-align: center;
+  overflow: hidden;
+`;
+
+export const Wrapper = styled.div`
+  word-wrap: normal;
+  justify-content: center;
+  display: flex;
 `;
 
 export const Headline = styled.h1`
@@ -42,7 +49,7 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  margin-bottom: 1rem;
 `;
 
 export const Image = styled.img`
@@ -66,12 +73,6 @@ export const Image = styled.img`
   @media screen and (max-width: 321px) {
     max-width: 80px;
   }
-`;
-
-export const Wrapper = styled.div`
-  word-wrap: normal;
-  justify-content: center;
-  display: flex;
 `;
 
 export const ImageTitle = styled.h2`
@@ -151,4 +152,7 @@ export const ButtonWrapper = styled.div`
 export const ButtonRedirect = styled.a`
   text-decoration: none;
   width: 75%;
+  @media screen and (max-width: 415px) {
+    width: 50%;
+  }
 `;

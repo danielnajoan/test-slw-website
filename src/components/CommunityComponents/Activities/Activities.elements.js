@@ -75,7 +75,7 @@ export const CardHeadline = styled.h1`
   font-family: Nunito;
   font-style: normal;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 33px;
   letter-spacing: 0.01em;
   color: #ff565e;
@@ -83,27 +83,27 @@ export const CardHeadline = styled.h1`
   padding-left: 2rem;
 
   @media screen and (max-width: 1024px) {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
   @media screen and (max-width: 769px) {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   @media screen and (max-width: 541px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding-left: 0rem;
   }
   @media screen and (max-width: 415px) {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
   @media screen and (max-width: 376px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   @media screen and (max-width: 321px) {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 21px;
   }
   @media screen and (max-width: 281px) {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 `;

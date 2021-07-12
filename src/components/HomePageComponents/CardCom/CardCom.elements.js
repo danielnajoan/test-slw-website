@@ -73,8 +73,6 @@ export const CardSec = styled.div`
   }
 `;
 
-export const CardInfo = styled.div``;
-
 export const CardImageContainer = styled.div`
   height: 10rem;
   padding: 0.5rem;

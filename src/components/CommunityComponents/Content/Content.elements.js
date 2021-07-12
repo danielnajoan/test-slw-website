@@ -1,56 +1,142 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 
 export const BaseSection = styled.div`
-    padding: 50px 0;
-    background: #fff;
-    text-align: left;
+  padding: 30px 0;
+  background: #fff;
+  text-align: left;
 `;
 
 export const Headline = styled.h1`
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 49px;
-    letter-spacing: 0.01em;
-    color: #FF565E;
-    margin-bottom: 2rem;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 49px;
+  letter-spacing: 0.01em;
+  color: #ff565e;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.7rem;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 1.6rem;
+  }
+  @media screen and (max-width: 541px) {
+    width: 85%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1.4rem;
+    line-height: 33px;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 1.2rem;
+    line-height: 30px;
+    width: 90%;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 1.1rem;
+    width: 100%;
+  }
 `;
 
 export const Subheadline = styled.h2`
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 48px;
-    letter-spacing: 0.01em;
-    color: #091F6B;
-    margin-bottom: 2rem;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 48px;
+  letter-spacing: 0.01em;
+  color: #091f6b;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.3rem;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 541px) {
+    width: 85%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+    line-height: 33px;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.8rem;
+    line-height: 30px;
+    width: 90%;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.7rem;
+    width: 100%;
+  }
 `;
 
 export const Wrapper = styled.div`
-    word-wrap: normal;
+  display: flex;
+  word-wrap: normal;
+  @media screen and (max-width: 541px) {
+    justify-content: center;
+  }
 `;
 
 export const Paragrah = styled.p`
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 35px;
-    letter-spacing: 0.01em;
-    color: #091F6B;
-    margin-bottom: 2rem;
-    width: 65%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3rem;
+  line-height: 35px;
+  letter-spacing: 0.01em;
+  color: #091f6b;
+  margin-bottom: 2rem;
+  width: 65%;
+
+  @media screen and (max-width: 541px) {
+    width: 90%;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 27px;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 376px) {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 321px) {
+    width: 70%;
+    font-size: 0.8rem;
+    line-height: 23px;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.7rem;
+    width: 90%;
+  }
 `;
 
 export const CarouselSection = styled(Carousel)`
   .rec.rec-pagination {
     visibility: hidden;
-    
-    @media screen and (max-width: 550px) {
-      visibility:visible;
+
+    @media screen and (max-width: 541px) {
+      visibility: visible;
     }
   }
   /* square buttons */
@@ -58,27 +144,27 @@ export const CarouselSection = styled(Carousel)`
     border-radius: 0;
     box-shadow: none;
     border-radius: 50%;
-    background: #FFFFFF;
+    background: #ffffff;
   }
   /* round buttons on hover */
   .rec.rec-arrow:hover {
-    background-color: #002FA6;
+    background-color: #002fa6;
   }
   /* pagination dot */
-  .rec.rec-dot{
-    @media screen and (max-width: 550px) {
+  .rec.rec-dot {
+    @media screen and (max-width: 541px) {
       width: 19px;
       height: 19px;
       box-shadow: none;
-      background: #FFFFFF;
-      border: 1px solid #8AA3FF;
+      background: #ffffff;
+      border: 1px solid #8aa3ff;
       box-sizing: border-box;
     }
   }
-  .rec.rec-dot.rec.rec-dot_active{
-    @media screen and (max-width: 550px) {
-      background: #B9C8FF;
-      border: 1px solid #8AA3FF;
+  .rec.rec-dot.rec.rec-dot_active {
+    @media screen and (max-width: 541px) {
+      background: #b9c8ff;
+      border: 1px solid #8aa3ff;
       box-sizing: border-box;
     }
   }
@@ -95,56 +181,100 @@ export const CarouselSection = styled(Carousel)`
 `;
 
 export const CardSec = styled.div`
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  @media screen and (max-width: 769px) {
+    margin: 1rem;
+    text-align: center;
+  }
+  @media screen and (max-width: 541px) {
+    padding: 0rem;
     width: 100%;
-    text-align: left;
-    padding: 1rem;
-    @media screen and (max-width: 920px) {
-        margin: 1rem;
-        text-align: center;
-        height: 30rem;
-        width: 50%;
-    }
-    @media screen and (max-width: 550px) {
-        width: 100%;
-    }
+  }
 `;
 
 export const ImageContainer = styled.div`
-    justify-content: center;
-    @media screen and (max-width: 550px) {
-        display: flex;
-    }
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 541px) {
+  }
 `;
 
 export const CardImage = styled.img`
-    border: 0;
-    align-items: center;
-    height: auto; 
-    width: auto;
-    max-width: 320px; 
-    max-height: 350px;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    @media screen and (max-width: 320px) {
-        max-width: 160px;
-    }
+  border: 0;
+  align-items: center;
+  height: auto;
+  width: auto;
+  max-width: 260px;
+  max-height: 350px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  @media screen and (max-width: 1024px) {
+    max-width: 200px;
+  }
+  @media screen and (max-width: 769px) {
+    max-width: 140px;
+  }
+  @media screen and (max-width: 541px) {
+    max-width: 200px;
+  }
+  @media screen and (max-width: 321px) {
+    max-width: 160px;
+  }
+  @media screen and (max-width: 281px) {
+    max-width: 100px;
+  }
 `;
 
 export const ButtonContainer = styled.div`
-    text-align: center;
+  text-align: center;
 `;
 
 export const ButtonHeadline = styled.p`
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.01em;
-    color: #091F6B;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: #091f6b;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 541px) {
+    width: 90%;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 27px;
     margin-bottom: 1rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 0.8rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.7rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.6rem;
+    line-height: 21px;
+  }
+  @media screen and (max-width: 281px) {
+    width: 90%;
+  }
 `;
 
-export const Redirect = styled.a`
-    text-decoration: none;
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const ButtonRedirect = styled.a`
+  text-decoration: none;
+  width: 60%;
 `;

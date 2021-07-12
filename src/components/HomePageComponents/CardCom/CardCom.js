@@ -3,7 +3,6 @@ import { Button4 } from "../../../globalStyles";
 import {
   CarouselSection,
   CardSec,
-  CardInfo,
   CardImageContainer,
   CardIcon,
   CardHeadline,

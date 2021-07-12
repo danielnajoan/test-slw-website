@@ -39,7 +39,6 @@ const Programs = ({ headline, programsData }) => {
                 imageUrl,
                 imageName,
               } = programData;
-              console.log(routeLink);
               return (
                 <CardSection key={id} to={"/community" + routeLink}>
                   <CardInfo>

@@ -315,8 +315,8 @@ export const Button8 = styled.button`
   background-color: ${({ primary }) => (primary ? "#325EFC" : "none")};
   color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "none")};
   border: ${({ btnBorder }) => (btnBorder ? "2px solid #325EFC" : "none")};
-  padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "none")};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? "18px" : "none")};
+  padding: ${({ btnPadding }) => (btnPadding ? "0.4rem 2rem" : "none")};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? "1rem" : "none")};
   border-radius: 33px;
   width: auto;
   white-space: nowrap;
@@ -327,6 +327,24 @@ export const Button8 = styled.button`
     background-color: ${({ primary }) => (primary ? "transparent" : "none")};
     color: ${({ colLabel }) => (colLabel ? "#325EFC" : "none")};
     border: ${({ btnBorder }) => (btnBorder ? "2px solid #325EFC" : "none")};
+  }
+
+  @media screen and (max-width: 541px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.1rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.6rem;
   }
 `;
 
@@ -340,8 +358,9 @@ export const Button9 = styled.button`
   color: ${({ colLabel }) => (colLabel ? "#5F71AC" : "#FFFFFF")};
   border: ${({ btnBorder }) =>
     btnBorder ? "2px solid #FFFFFF" : "2px solid #FFFFFF"};
-  padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "10px 34px")};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? "18px" : "18px")};
+  padding: ${({ btnPadding }) =>
+    btnPadding ? "0.6rem 2.2rem" : "0.6rem 2.2rem"};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? "1.2rem" : "1.2rem")};
   border-radius: 6px;
   width: 300px;
   white-space: nowrap;
@@ -353,6 +372,24 @@ export const Button9 = styled.button`
     color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "#5F71AC")};
     border: ${({ btnBorder }) =>
       btnBorder ? "2px solid #FFFFFF" : "2px solid #FFFFFF"};
+  }
+
+  @media screen and (max-width: 541px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.1rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.6rem;
   }
 `;
 

@@ -2,10 +2,10 @@ import React, { memo } from "react";
 import { Container, Button6 } from "../../../globalStyles";
 import {
   BaseSection,
+  Wrapper,
   Headline,
   ImageContainer,
   Image,
-  Wrapper,
   ImageTitle,
   Description,
   ButtonWrapper,
@@ -25,7 +25,9 @@ const Advisor = ({
     <>
       <BaseSection>
         <Container>
-          <Headline>{headline}</Headline>
+          <Wrapper>
+            <Headline>{headline}</Headline>
+          </Wrapper>
           <ImageContainer>
             <Image src={imageUrl} alt={imageName}></Image>
           </ImageContainer>
