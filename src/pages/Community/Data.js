@@ -4,6 +4,7 @@ import chatBuble from "../../images/Temporary.png";
 
 import discordOne from "../../images/Community-Discord-1.png";
 import discordTwo from "../../images/Community-Discord-2.png";
+import discordThree from "../../images/Community-Discord-3.png";
 
 import testimonyOne from "../../images/Testimony-1.png";
 import testimonyTwo from "../../images/Testimony-2.png";
@@ -205,13 +206,28 @@ export const discordObj = {
 };
 
 export const subdiscordObj = {
-  imageUrl: discordTwo,
-  imageName: "Discord",
-  headline1: "Discuss your favorite music, art, films, books, anything!",
-  paragraph1:
-    "Meet fellow warriors to discuss your favorites or share your interests, through text and voice chat channels!",
-  headline2: "Mental health Resources",
-  paragraph2:
+  subDiscordsData: [
+    {
+      id: 1,
+      cardHeadline: "Having a bad day? Let it out here.",
+      imageUrl: discordTwo,
+      imageName: "discordTwo",
+      cardParagraph:
+        "Our server has 4 Venting Channels curated for your specific needs.",
+      boldParagraph: "",
+    },
+    {
+      id: 2,
+      cardHeadline: "Discuss your favorite music, films, books, anything!",
+      imageUrl: discordThree,
+      imageName: "discordThree",
+      cardParagraph:
+        "Meet fellow warriors to discuss your favorites or share your interests through ",
+      boldParagraph: "text and voice chat channels!",
+    },
+  ],
+  headline: "Mental health Resources",
+  paragraph:
     "A channel where you can find calming exercises and other Indonesian crisis resources.",
 };
 

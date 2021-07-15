@@ -1,42 +1,77 @@
-import React, { memo } from 'react';
-import { Container } from '../../../globalStyles';
+import React, { memo, useState } from "react";
+import { Container } from "../../../globalStyles";
 import {
-    BaseSection,
-    Row,
-    Column,
-    ImageContainer,
-    Image,
-    Headline,
-    Wrapper,
-    Paragraph,
-} from './SubDiscord.elements';
+  BaseSection,
+  CardWrapper,
+  CardContainer,
+  CardSection,
+  CardHeader,
+  CardHeadline,
+  CardRow,
+  CardColumn,
+  ImageContainer,
+  Image,
+  CardParagraph,
+  BoldParagraph,
+  Wrapper,
+  Headline,
+  Paragraph,
+} from "./SubDiscord.elements";
 
-const SubDiscord = ({ imageUrl, imageName, headline1, paragraph1, headline2, paragraph2 }) => {
-    return (
-        <>
-            <BaseSection>
-                <Container>
-                    <Row>
-                        <Column>
-                            <ImageContainer>
-                                <Image src={imageUrl} alt={imageName}/>
-                            </ImageContainer>
-                        </Column>
-                        <Column>
-                            <Headline>{headline1}</Headline>
-                            <Wrapper>
-                                <Paragraph>{paragraph1}</Paragraph>
-                            </Wrapper>
-                            <Headline>{headline2}</Headline>
-                            <Wrapper>
-                                <Paragraph>{paragraph2}</Paragraph>
-                            </Wrapper>
-                        </Column>
-                    </Row>
-                </Container>
-            </BaseSection>
-        </>
-    )
-}
+const SubDiscord = ({ subDiscordsData, headline, paragraph }) => {
+  const [cards] = useState(subDiscordsData);
+  return (
+    <>
+      <BaseSection>
+        <Container>
+          <CardWrapper>
+            <CardContainer>
+              {cards.map((cardData) => {
+                const {
+                  id,
+                  cardHeadline,
+                  imageUrl,
+                  imageName,
+                  cardParagraph,
+                  boldParagraph,
+                } = cardData;
+                return (
+                  <CardSection key={id}>
+                    <CardHeader>
+                      <CardHeadline>{cardHeadline}</CardHeadline>
+                    </CardHeader>
+                    <CardRow>
+                      <CardColumn colWidth={true}>
+                        <ImageContainer>
+                          <Image src={imageUrl} alt={imageName} />
+                        </ImageContainer>
+                      </CardColumn>
+                      <CardColumn colWidth={false}>
+                        <CardParagraph>
+                          {cardParagraph}
+                          <BoldParagraph>{boldParagraph}</BoldParagraph>
+                        </CardParagraph>
+                      </CardColumn>
+                    </CardRow>
+                  </CardSection>
+                );
+              })}
+            </CardContainer>
+          </CardWrapper>
+          <CardWrapper>
+            <CardContainer>
+              <Wrapper>
+                <Headline>{headline}</Headline>
+              </Wrapper>
+              <Wrapper>
+                <Paragraph>{paragraph}</Paragraph>
+              </Wrapper>
+            </CardContainer>
+          </CardWrapper>
+        </Container>
+      </BaseSection>
+    </>
+  );
+};
 
 export default memo(SubDiscord);

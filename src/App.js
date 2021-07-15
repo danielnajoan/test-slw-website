@@ -25,7 +25,7 @@ function App() {
         <Route path="/contact-us" exact component={ContactUs} />
         <Route path="/get-involved" exact component={GetInvolved} />
         <Route path="/get-involved/volunteer" exact component={Volunteer} />
-        <Route path="/team" exact component={Team} />
+        <Route path="/about-us/team" exact component={Team} />
       </Switch>
       <Footer />
     </Router>

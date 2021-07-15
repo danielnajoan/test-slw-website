@@ -1,10 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { HashLink } from "react-router-hash-link";
 
 export const Column = styled.div`
-    padding: 0.5rem;
-    margin: 0.5rem;
+  margin: 0.5rem;
 `;
 
-export const Redirect = styled.a`
-    text-decoration: none;
+export const ButtonLink = styled(HashLink)``;
+
+export const ButtonRedirect = styled.a`
+  text-decoration: none;
 `;

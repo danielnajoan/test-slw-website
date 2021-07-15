@@ -1,42 +1,47 @@
-import React, { useState, memo } from 'react';
-import { Container } from '../../../globalStyles';
-import RenderButton from '../RenderButton/RenderButton';
+import React, { useState, memo } from "react";
+import { Container } from "../../../globalStyles";
+import RenderButton from "../RenderButton/RenderButton";
 import {
-    BaseSection,
-    Header,
-    BaseImage,
-    BaseWrapper,
-    ButtonContainer,
-    Headline,
-    Subheadline,
-} from './CommunityCover.elements';
+  BaseSection,
+  Header,
+  BaseImage,
+  BaseWrapper,
+  ButtonContainer,
+  Headline,
+  Subheadline,
+} from "./CommunityCover.elements";
 
 const CommunityCover = ({ headline, subheadline, buttonsData }) => {
-    const [cards] = useState(buttonsData);
-    return (
-        <>
-            <BaseSection>
-                <BaseImage>
-                    <Container>
-                        <BaseWrapper>
-                            <Header>
-                                <Headline>{headline}</Headline>
-                                <Subheadline>{subheadline}</Subheadline>
-                            </Header>
-                            <ButtonContainer>
-                                {cards.map((buttonData) => {
-                                    const { id, urlButton, buttonLabel } = buttonData;
-                                    return (
-                                    <RenderButton key={id} id={id} urlButton={urlButton} buttonLabel={buttonLabel}/>
-                                    );
-                                })}
-                            </ButtonContainer>
-                        </BaseWrapper>
-                    </Container>
-                </BaseImage>
-            </BaseSection>
-        </>
-    )
-}
+  const [cards] = useState(buttonsData);
+  return (
+    <>
+      <BaseSection>
+        <BaseImage>
+          <Container>
+            <BaseWrapper>
+              <Header>
+                <Headline>{headline}</Headline>
+                <Subheadline>{subheadline}</Subheadline>
+              </Header>
+              <ButtonContainer>
+                {cards.map((buttonData) => {
+                  const { id, urlButton, buttonLabel } = buttonData;
+                  return (
+                    <RenderButton
+                      key={id}
+                      id={id}
+                      urlButton={urlButton}
+                      buttonLabel={buttonLabel}
+                    />
+                  );
+                })}
+              </ButtonContainer>
+            </BaseWrapper>
+          </Container>
+        </BaseImage>
+      </BaseSection>
+    </>
+  );
+};
 
 export default memo(CommunityCover);

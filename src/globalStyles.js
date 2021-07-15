@@ -291,10 +291,10 @@ export const Button7 = styled.button`
   background-color: ${({ primary }) => (primary ? "transparent" : "none")};
   color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "none")};
   border: ${({ btnBorder }) => (btnBorder ? "2px solid #FFFFFF" : "none")};
-  padding: ${({ btnPadding }) => (btnPadding ? "10px 34px" : "none")};
-  font-size: ${({ btnFontSize }) => (btnFontSize ? "18px" : "none")};
+  padding: ${({ btnPadding }) => (btnPadding ? "0.4rem 2rem" : "none")};
+  font-size: ${({ btnFontSize }) => (btnFontSize ? "1rem" : "none")};
   border-radius: 33px;
-  width: 220px;
+  width: 180px;
   white-space: nowrap;
   outline: none;
   cursor: pointer;
@@ -304,9 +304,30 @@ export const Button7 = styled.button`
     color: ${({ colLabel }) => (colLabel ? "#3858CC" : "none")};
     border: ${({ btnBorder }) => (btnBorder ? "2px solid #FFFFFF" : "none")};
   }
+
+  @media screen and (max-width: 769px) {
+    width: 150px;
+  }
+  @media screen and (max-width: 541px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.1rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.6rem;
+  }
 `;
 
-//For Community Creative Content and Discord Section
+//For Community Creative Content and Discord Section and Spotify Section
 export const Button8 = styled.button`
   font-family: Nunito;
   font-style: normal;
