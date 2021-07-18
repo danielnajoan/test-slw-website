@@ -1,5 +1,16 @@
-import founder from "../../images/Michelle-Teh.png";
-import contentMember3 from "../../images/Verren-Goej.png";
+import founder from "../../images/SLWTeam/Michelle-Teh.png";
+
+import contentMember1 from "../../images/SLWTeam/ContentTeam/Adristi Amanda.JPG";
+import contentMember2 from "../../images/SLWTeam/ContentTeam/Rityasiwi Gita.JPG";
+import contentMember3 from "../../images/SLWTeam/ContentTeam/Verren-Goej.png";
+import contentMember4 from "../../images/SLWTeam/ContentTeam/Hikari Eguchi.jpeg";
+import contentMember5 from "../../images/SLWTeam/ContentTeam/Trisha.jpg";
+
+import designMember3 from "../../images/SLWTeam/DesignTeam/Salsabila RSA.jpg";
+import designMember5 from "../../images/SLWTeam/DesignTeam/Monika Rosary.jpg";
+import designMember7 from "../../images/SLWTeam/DesignTeam/Aurora Aprilia.jpg";
+
+import communityLead from "../../images/SLWTeam/CommunityTeam/Aileen Teh.jpg";
 
 export const slwTeamObj = {
   headline: "Get to know the SLW Team!",
@@ -31,32 +42,32 @@ export const slwTeamObj = {
         teamMembersData: [
           {
             id: 1,
-            imageUrl: contentMember3,
-            imageName: "",
-            imageTitle: "Jysa Nursakinah",
+            imageUrl: contentMember1,
+            imageName: "contentMember1",
+            imageTitle: "Adristi Amanda",
           },
           {
             id: 2,
-            imageUrl: contentMember3,
-            imageName: "",
+            imageUrl: contentMember2,
+            imageName: "contentMember2",
             imageTitle: "Rityasiwi Gita",
           },
           {
             id: 3,
             imageUrl: contentMember3,
-            imageName: "",
+            imageName: "contentMember3",
             imageTitle: "Verren Goej",
           },
           {
             id: 4,
-            imageUrl: contentMember3,
-            imageName: "",
-            imageTitle: "Michelle Alisa",
+            imageUrl: contentMember4,
+            imageName: "contentMember4",
+            imageTitle: "Hikari Eguchi",
           },
           {
             id: 5,
-            imageUrl: contentMember3,
-            imageName: "",
+            imageUrl: contentMember5,
+            imageName: "contentMember5",
             imageTitle: "Trisha",
           },
         ],
@@ -119,7 +130,7 @@ export const slwTeamObj = {
           },
           {
             id: 3,
-            imageUrl: contentMember3,
+            imageUrl: designMember3,
             imageName: "",
             imageTitle: "Salsa",
           },
@@ -131,9 +142,9 @@ export const slwTeamObj = {
           },
           {
             id: 5,
-            imageUrl: contentMember3,
+            imageUrl: designMember5,
             imageName: "",
-            imageTitle: "Monika",
+            imageTitle: "Monika Rosary",
           },
           {
             id: 6,
@@ -143,9 +154,9 @@ export const slwTeamObj = {
           },
           {
             id: 7,
-            imageUrl: contentMember3,
+            imageUrl: designMember7,
             imageName: "",
-            imageTitle: "Aurora",
+            imageTitle: "Aurora Aprilia",
           },
           {
             id: 8,
@@ -186,7 +197,7 @@ export const slwTeamObj = {
       id: 6,
       cardHeadline: "Community",
       modalData: {
-        imageUrl: founder,
+        imageUrl: communityLead,
         imageName: "",
         title: "Aileen Teh",
         subtitle: "Community Team Lead",
