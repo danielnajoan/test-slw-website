@@ -17,6 +17,9 @@ export const BaseImage = styled.div`
   @media screen and (max-width: 1024px) {
     height: 30rem;
   }
+  @media screen and (max-width: 415px) {
+    height: 40rem;
+  }
 `;
 
 export const BaseWrapper = styled.div`
@@ -27,12 +30,13 @@ export const BaseWrapper = styled.div`
   @media screen and (max-width: 1024px) {
     height: 10rem;
   }
-  @media screen and (max-width: 541px) {
-  }
 `;
 
 export const Header = styled.div`
   margin: 1rem;
+  @media screen and (max-width: 541px) {
+    text-align: center;
+  }
 `;
 
 export const Headline = styled.h1`
@@ -99,9 +103,22 @@ export const Subheadline = styled.p`
   }
 `;
 
+export const CardWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export const ButtonContainer = styled.div`
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  @media screen and (max-width: 541px) {
+    flex-wrap: none;
+    justify-content: center;
+    width: 95%;
+  }
+  @media screen and (max-width: 415px) {
+    width: 100%;
+  }
 `;

@@ -6,6 +6,7 @@ import {
   Header,
   BaseImage,
   BaseWrapper,
+  CardWrapper,
   ButtonContainer,
   Headline,
   Subheadline,
@@ -23,19 +24,21 @@ const CommunityCover = ({ headline, subheadline, buttonsData }) => {
                 <Headline>{headline}</Headline>
                 <Subheadline>{subheadline}</Subheadline>
               </Header>
-              <ButtonContainer>
-                {cards.map((buttonData) => {
-                  const { id, urlButton, buttonLabel } = buttonData;
-                  return (
-                    <RenderButton
-                      key={id}
-                      id={id}
-                      urlButton={urlButton}
-                      buttonLabel={buttonLabel}
-                    />
-                  );
-                })}
-              </ButtonContainer>
+              <CardWrapper>
+                <ButtonContainer>
+                  {cards.map((buttonData) => {
+                    const { id, urlButton, buttonLabel } = buttonData;
+                    return (
+                      <RenderButton
+                        key={id}
+                        id={id}
+                        urlButton={urlButton}
+                        buttonLabel={buttonLabel}
+                      />
+                    );
+                  })}
+                </ButtonContainer>
+              </CardWrapper>
             </BaseWrapper>
           </Container>
         </BaseImage>
