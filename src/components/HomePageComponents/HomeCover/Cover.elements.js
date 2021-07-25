@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import coverImg from "../../../images/DesktopBackground-2.png";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const BaseSection = styled.div`
   position: relative;
@@ -129,7 +129,7 @@ export const ButtonWrapper = styled.div`
   justify-content: left;
 `;
 
-export const ButtonLink = styled(Link)`
+export const ButtonLink = styled(HashLink)`
   width: auto;
   @media screen and (max-width: 321px) {
     width: 50%;

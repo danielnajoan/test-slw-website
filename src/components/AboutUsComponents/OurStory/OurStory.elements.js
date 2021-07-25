@@ -166,7 +166,7 @@ export const ButtonHeadline = styled.h1`
   font-size: 2rem;
   line-height: 119.6%;
   color: #091f6b;
-  margin-top: 1rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   @media screen and (max-width: 769px) {
     align-items: center;

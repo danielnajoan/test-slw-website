@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BaseSection = styled.div`
-  padding: 40px 0px;
+  padding: 100px 0px;
   background: #ffffff;
   text-align: center;
 `;

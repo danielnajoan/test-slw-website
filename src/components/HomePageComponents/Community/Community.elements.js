@@ -34,7 +34,7 @@ export const Headline = styled.h1`
   font-size: 2.3rem;
   line-height: 119.6%;
   color: #ffffff;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: 1024px) {
     font-size: 2.2rem;
