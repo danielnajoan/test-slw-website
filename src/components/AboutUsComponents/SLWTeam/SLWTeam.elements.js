@@ -11,7 +11,7 @@ export const Headline = styled.h1`
   font-weight: bold;
   font-size: 40px;
   line-height: 119.6%;
-  color: #3a2a2a;
+  color: #091f6b;
   margin-bottom: 2rem;
 `;
 export const Subheadline = styled.h2`
@@ -20,7 +20,7 @@ export const Subheadline = styled.h2`
   font-weight: normal;
   font-size: 22px;
   line-height: 145.4%;
-  color: #3a2a2a;
+  color: #091f6b;
   margin-bottom: 2rem;
 `;
 

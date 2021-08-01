@@ -1,5 +1,6 @@
-import React, { useState, memo } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { Container, Button6 } from "../../../globalStyles";
+import LoadInstagramApi from "./LoadInstagramApi.js";
 import {
   BaseSection,
   Headline,
@@ -20,12 +21,18 @@ const InstagramAPI = ({
   instagramAPIsData,
 }) => {
   const [cards] = useState(instagramAPIsData);
-  const script = document.createElement("script");
-  script.src = "https://www.instagram.com/embed.js";
-  script.async = true;
-  script.onload = "window.instgrm.Embeds.process()";
-  document.body.appendChild(script);
+  // const script = document.createElement("script");
+  // script.src = "https://www.instagram.com/embed.js";
+  // script.async = true;
+  // script.onload = "window.instgrm.Embeds.process()";
+  // document.body.appendChild(script);
 
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    LoadInstagramApi(() => {
+      setLoaded(true);
+    });
+  });
   return (
     <>
       <BaseSection>
@@ -40,10 +47,14 @@ const InstagramAPI = ({
               return (
                 <CardSection key={id}>
                   <CardInfo>
-                    <InstagramApiContainer
-                      className={"instagram-media"}
-                      data-instgrm-permalink={instagramAPI}
-                    ></InstagramApiContainer>
+                    {loaded ? (
+                      <InstagramApiContainer
+                        className={"instagram-media"}
+                        data-instgrm-permalink={instagramAPI}
+                      ></InstagramApiContainer>
+                    ) : (
+                      ""
+                    )}
                   </CardInfo>
                 </CardSection>
               );

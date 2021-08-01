@@ -38,7 +38,7 @@ function Home() {
       <LazyLoad height={400}>
         <Programs {...programsObj} />
       </LazyLoad>
-      <InstagramAPI {...instagramAPIObj} />
+      {/* <InstagramAPI {...instagramAPIObj} /> */}
       <LazyLoad height={200}>
         <Impact {...impactObj} />
       </LazyLoad>
