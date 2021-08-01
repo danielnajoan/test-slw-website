@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
@@ -23,7 +23,7 @@ export const NavbarContainer = styled(Container)`
   ${Container}
 `;
 
-export const NavLogo = styled(Link)`
+export const NavLogo = styled(HashLink)`
   font-family: Abril Fatface;
   font-style: normal;
   font-weight: normal;
@@ -108,7 +108,7 @@ export const NavItem = styled.li`
   }
 `;
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(HashLink)`
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;

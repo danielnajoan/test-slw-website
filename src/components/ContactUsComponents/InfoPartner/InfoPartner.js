@@ -28,11 +28,13 @@ const InfoPartner = ({
           <Headline>{headline}</Headline>
           <WarpperContainer>
             <Wrapper>
-              <Paragraph fontWeight={colParaf1}>{paragraph1}</Paragraph>
-              <Paragraph fontWeight={colParaf2}>{paragraph2}</Paragraph>
-              <ButtonHeadline>{btnHeadline}</ButtonHeadline>
+              <Paragraph>{paragraph1}</Paragraph>
+              <Paragraph>{paragraph2}</Paragraph>
             </Wrapper>
           </WarpperContainer>
+          <Wrapper>
+            <ButtonHeadline>{btnHeadline}</ButtonHeadline>
+          </Wrapper>
           <ButtonWrapper>
             <ButtonLink href={url}>
               <Button1

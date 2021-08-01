@@ -22,7 +22,7 @@ const RenderButton = ({ id, urlButton, buttonLabel }) => {
   } else {
     return (
       <Column>
-        <ButtonLink to={urlButton}>
+        <ButtonLink smooth to={urlButton}>
           <Button7
             primary={true}
             colLabel={true}

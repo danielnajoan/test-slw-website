@@ -8,6 +8,7 @@ import discordThree from "../../images/Community-Discord-3.png";
 
 import testimonyOne from "../../images/Testimony-1.png";
 import testimonyTwo from "../../images/Testimony-2.png";
+import testimonyThree from "../../images/Testimony-3.png";
 
 export const communityCoverObj = {
   headline: "A safe space for you",
@@ -20,7 +21,7 @@ export const communityCoverObj = {
     },
     {
       id: 2,
-      urlButton: "/",
+      urlButton: "/community#activities",
       buttonLabel: "Activities",
     },
     {
@@ -99,6 +100,7 @@ export const contentObj = {
 };
 
 export const activitiesObj = {
+  className: "activities",
   headline: "Online Activities",
   subheadline: "Join in the fun activities we have in SLW!",
   cardHeadline: "Collaborations with Public Figures",
@@ -132,7 +134,7 @@ export const activitiesObj = {
   activitiesData: [
     {
       id: 1,
-      className: "#gameNight",
+      className: "gameNight",
       cardTitle: "Game Night",
       imageUrl: testImage,
       imageName: "figureImage",
@@ -141,7 +143,7 @@ export const activitiesObj = {
     },
     {
       id: 2,
-      className: "#bootcamp",
+      className: "bootcamp",
       cardTitle: "Self-Love Bootcamp",
       imageUrl: testImage,
       imageName: "figureImage",
@@ -150,7 +152,7 @@ export const activitiesObj = {
     },
     {
       id: 3,
-      className: "#school",
+      className: "school",
       cardTitle: "SLW Goes to School",
       imageUrl: testImage,
       imageName: "figureImage",
@@ -159,7 +161,7 @@ export const activitiesObj = {
     },
     {
       id: 4,
-      className: "#virtual",
+      className: "virtual",
       cardTitle: "Virtual Support Group",
       imageUrl: testImage,
       imageName: "figureImage",
@@ -186,6 +188,15 @@ export const testimonyObj = {
       imageUrl: testimonyTwo,
       imageName: "Testimony",
       cardHeadline: "Anggi Avianti",
+      cardSubheadline: "Support Group Facilitator",
+      cardParagraph:
+        "Virtual support group SLW ini worth it banget! Baru ikut 2 kali sesi materi dari total 6 sesi tapinya udah dapat banyak insights serta spirit untuk maju kearah yang lebih baik. Aku juga bersyukur bisa jadi fasilitator di VSG SLW kali ini karena bisa bertemu dan saling bertukar insights dengan teman-teman peserta lain yang satu tujuan, sehingga insights yang diperoleh tuh lebih mendalam. Thank you SLW -- keren!”",
+    },
+    {
+      id: 3,
+      imageUrl: testimonyThree,
+      imageName: "Testimony",
+      cardHeadline: "Syifa",
       cardSubheadline: "Support Group Facilitator",
       cardParagraph:
         "Virtual support group SLW ini worth it banget! Baru ikut 2 kali sesi materi dari total 6 sesi tapinya udah dapat banyak insights serta spirit untuk maju kearah yang lebih baik. Aku juga bersyukur bisa jadi fasilitator di VSG SLW kali ini karena bisa bertemu dan saling bertukar insights dengan teman-teman peserta lain yang satu tujuan, sehingga insights yang diperoleh tuh lebih mendalam. Thank you SLW -- keren!”",

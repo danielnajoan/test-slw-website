@@ -40,7 +40,7 @@ const Programs = ({ headline, programsData }) => {
                 imageName,
               } = programData;
               return (
-                <CardSection key={id} to={"/community" + routeLink}>
+                <CardSection smooth key={id} to={"/community" + routeLink}>
                   <CardInfo>
                     <CardRow>
                       <CardColumn colWidth={true}>

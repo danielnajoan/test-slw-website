@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const BaseSection = styled.div`
   padding: 160px 0;
-  background: #ffd6d6;
+  background: #fff1e5;
   border-radius: 60px 60px 0px 0px;
   @media screen and (max-width: 1024px) {
     padding: 100px 0;
@@ -47,10 +47,10 @@ export const WarpperContainer = styled.div`
 
 export const Wrapper = styled.div`
   word-wrap: normal;
-  width: 75%;
+  width: 60%;
   align-items: center;
   text-align: left;
-  padding: 1rem;
+  padding-left: 1rem;
   @media screen and (max-width: 769px) {
     text-align: center;
     padding: 0rem;
@@ -61,9 +61,9 @@ export const Wrapper = styled.div`
 export const Paragraph = styled.p`
   font-family: Nunito;
   font-style: normal;
-  font-weight: ${(props) => props.fontWeight};
+  font-weight: normal;
   font-size: 1.4rem;
-  line-height: 25px;
+  line-height: 34px;
   color: #091f6b;
   margin-bottom: 2rem;
   @media screen and (max-width: 541px) {
@@ -89,10 +89,11 @@ export const ButtonHeadline = styled.h2`
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
-  line-height: 33px;
-  color: #091f6b;
+  line-height: 34px;
+  color: #3858cc;
   letter-spacing: 0.02em;
-  margin-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   @media screen and (max-width: 541px) {
     font-size: 1.3rem;
   }

@@ -24,7 +24,7 @@ function Navbar() {
         <Nav>
           <NavbarContainer>
             <LogoWrapper>
-              <NavLogo to="/" onClick={closeMobileMenu}>
+              <NavLogo smooth to="/#" onClick={closeMobileMenu}>
                 self love warrior
               </NavLogo>
             </LogoWrapper>
@@ -33,22 +33,22 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/about-us" onClick={closeMobileMenu}>
+                <NavLinks smooth to="/about-us#" onClick={closeMobileMenu}>
                   About Us
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/community" onClick={closeMobileMenu}>
+                <NavLinks smooth to="/community#" onClick={closeMobileMenu}>
                   Community
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/contact-us" onClick={closeMobileMenu}>
+                <NavLinks smooth to="/contact-us#" onClick={closeMobileMenu}>
                   Contact Us
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/get-involved" onClick={closeMobileMenu}>
+                <NavLinks smooth to="/get-involved#" onClick={closeMobileMenu}>
                   Get Involved
                 </NavLinks>
               </NavItem>

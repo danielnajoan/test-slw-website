@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const BaseSection = styled.div`
   color: #fff;
@@ -73,7 +73,7 @@ export const Column = styled.div`
   }
 `;
 
-export const ButtonLink = styled(Link)`
+export const ButtonLink = styled(HashLink)`
   text-align: center;
   width: 50%;
 

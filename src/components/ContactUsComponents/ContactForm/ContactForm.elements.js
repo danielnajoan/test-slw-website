@@ -52,11 +52,66 @@ export const Wrapper = styled.div`
 export const ButtonHeadline = styled.h2`
   font-family: Nunito;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.4rem;
-  line-height: 27px;
+  line-height: 32px;
   letter-spacing: 0.02em;
-  color: #4962bb;
+  color: #091f6b;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 541px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.8rem;
+  }
+`;
+
+export const Paragraph = styled.h2`
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #091f6b;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  @media screen and (max-width: 541px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 376px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 321px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 281px) {
+    font-size: 0.8rem;
+  }
+`;
+
+export const Email = styled.h2`
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  color: #3858cc;
   margin-bottom: 1rem;
 
   @media screen and (max-width: 541px) {

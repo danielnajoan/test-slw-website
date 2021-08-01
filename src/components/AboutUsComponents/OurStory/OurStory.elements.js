@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const StoryHeader = styled.div`
   height: 249px;
@@ -194,6 +194,6 @@ export const ButtonWrapper = styled.div`
   justify-content: center;
 `;
 
-export const ButtonLink = styled(Link)`
+export const ButtonLink = styled(HashLink)`
   width: 75%;
 `;

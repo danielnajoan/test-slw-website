@@ -62,7 +62,7 @@ export const CardImage = styled.img`
   align-items: center;
   height: auto;
   width: auto;
-  max-width: 240px;
+  max-width: 260px;
   max-height: 350px;
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -98,7 +98,7 @@ export const CardHeadline = styled.h2`
   line-height: 33px;
   letter-spacing: 0.01em;
   color: #ff565e;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 
   @media screen and (max-width: 1024px) {
     font-size: 1rem;
@@ -137,11 +137,11 @@ export const CardDesc = styled.p`
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
-  line-height: 23px;
+  font-size: 1.1rem;
+  line-height: 25px;
   letter-spacing: 0.01em;
   color: #091f6b;
-  width: 90%;
+  width: 100%;
 
   @media screen and (max-width: 1024px) {
     font-size: 0.8rem;

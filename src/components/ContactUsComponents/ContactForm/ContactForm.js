@@ -7,16 +7,17 @@ import {
   ButtonHeadline,
   ButtonWrapper,
   ButtonRedirect,
+  Paragraph,
+  Email,
 } from "./ContactForm.elements";
 
 const ContactForm = ({
   formHeadline,
-  btnHeadline1,
-  url1,
-  buttonLabel1,
-  btnHeadline2,
-  url2,
-  buttonLabel2,
+  btnHeadline,
+  url,
+  buttonLabel,
+  paragraph,
+  email,
 }) => {
   return (
     <>
@@ -24,26 +25,10 @@ const ContactForm = ({
         <Container>
           <Headline>{formHeadline}</Headline>
           <Wrapper>
-            <ButtonHeadline>{btnHeadline1}</ButtonHeadline>
+            <ButtonHeadline>{btnHeadline}</ButtonHeadline>
           </Wrapper>
           <ButtonWrapper>
-            <ButtonRedirect href={url1}>
-              <Button1
-                primary={false}
-                colLabel={false}
-                btnBorder={false}
-                btnPadding={false}
-                btnFontSize={false}
-              >
-                {buttonLabel1}
-              </Button1>
-            </ButtonRedirect>
-          </ButtonWrapper>
-          <Wrapper>
-            <ButtonHeadline>{btnHeadline2}</ButtonHeadline>
-          </Wrapper>
-          <ButtonWrapper>
-            <ButtonRedirect href={url2}>
+            <ButtonRedirect href={url}>
               <Button1
                 primary={true}
                 colLabel={true}
@@ -51,10 +36,14 @@ const ContactForm = ({
                 btnPadding={true}
                 btnFontSize={true}
               >
-                {buttonLabel2}
+                {buttonLabel}
               </Button1>
             </ButtonRedirect>
           </ButtonWrapper>
+          <Wrapper>
+            <Paragraph>{paragraph}</Paragraph>
+            <Email>{email}</Email>
+          </Wrapper>
         </Container>
       </BaseSection>
     </>

@@ -97,8 +97,8 @@ export const CarouselSection = styled(Carousel)`
 `;
 
 export const CardSection = styled.div`
-  width: 90%;
-  height: 30rem;
+  width: 80%;
+  height: 28rem;
   padding: 2rem;
   margin: 12px;
   border-radius: 60px;
@@ -257,7 +257,7 @@ export const CardParagraph = styled.p`
   letter-spacing: 0.01em;
   color: #001a49;
   margin-bottom: 1rem;
-  width: 75%;
+  width: 90%;
   @media screen and (max-width: 1024px) {
     font-size: 0.8rem;
   }

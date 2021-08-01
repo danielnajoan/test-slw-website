@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const BaseSection = styled.div`
   padding: 50px 0;
-  background: #5f71ac;
+  background: #4962bb;
   text-align: center;
 `;
 
@@ -76,7 +76,7 @@ export const Column = styled.div`
   }
 `;
 
-export const ButtonLink = styled(Link)`
+export const ButtonLink = styled(HashLink)`
   @media screen and (max-width: 376px) {
     width: 75%;
   }

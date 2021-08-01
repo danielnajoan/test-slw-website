@@ -47,7 +47,7 @@ const OurStory = ({
           <ViewTeam>
             <ButtonHeadline>{btnHeadline}</ButtonHeadline>
             <ButtonWrapper>
-              <ButtonLink to="/about-us/team">
+              <ButtonLink to="/about-us/team#">
                 <Button2
                   primary={true}
                   colLabel={true}

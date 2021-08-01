@@ -19,7 +19,7 @@ function Infrormation({ headline, buttonLabel1, buttonLabel2 }) {
           </Wrapper>
           <Row>
             <Column colPosition={true}>
-              <ButtonLink to="/contact-us">
+              <ButtonLink smooth to="/contact-us#">
                 <Button5
                   primary={true}
                   colLabel={true}
@@ -32,7 +32,7 @@ function Infrormation({ headline, buttonLabel1, buttonLabel2 }) {
               </ButtonLink>
             </Column>
             <Column colPosition={false}>
-              <ButtonLink to="/newsletter">
+              <ButtonLink smooth to="/newsletter#">
                 <Button5
                   primary={false}
                   colLabel={false}

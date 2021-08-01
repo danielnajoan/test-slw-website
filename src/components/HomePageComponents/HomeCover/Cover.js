@@ -23,7 +23,7 @@ function Cover({ headline, subheadline, buttonLabel }) {
               <Subheadline>{subheadline}</Subheadline>
             </TextWrapper>
             <ButtonWrapper>
-              <ButtonLink to={"/get-involved"}>
+              <ButtonLink to={"/get-involved#"}>
                 <Button3
                   primary={true}
                   colLabel={true}

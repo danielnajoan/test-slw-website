@@ -291,10 +291,10 @@ export const Button7 = styled.button`
   background-color: ${({ primary }) => (primary ? "transparent" : "none")};
   color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "none")};
   border: ${({ btnBorder }) => (btnBorder ? "2px solid #FFFFFF" : "none")};
-  padding: ${({ btnPadding }) => (btnPadding ? "0.4rem 2rem" : "none")};
+  padding: ${({ btnPadding }) => (btnPadding ? "0.6rem 2rem" : "none")};
   font-size: ${({ btnFontSize }) => (btnFontSize ? "1rem" : "none")};
   border-radius: 33px;
-  width: 180px;
+  width: 140px;
   white-space: nowrap;
   outline: none;
   cursor: pointer;
@@ -376,7 +376,7 @@ export const Button9 = styled.button`
   font-weight: bold;
   line-height: 135.94%;
   background-color: ${({ primary }) => (primary ? "#FFFFFF" : "transparent")};
-  color: ${({ colLabel }) => (colLabel ? "#5F71AC" : "#FFFFFF")};
+  color: ${({ colLabel }) => (colLabel ? "#4962BB" : "#FFFFFF")};
   border: ${({ btnBorder }) =>
     btnBorder ? "2px solid #FFFFFF" : "2px solid #FFFFFF"};
   padding: ${({ btnPadding }) =>
@@ -390,7 +390,7 @@ export const Button9 = styled.button`
 
   &:hover {
     background-color: ${({ primary }) => (primary ? "transparent" : "#FFFFFF")};
-    color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "#5F71AC")};
+    color: ${({ colLabel }) => (colLabel ? "#FFFFFF" : "#4962BB")};
     border: ${({ btnBorder }) =>
       btnBorder ? "2px solid #FFFFFF" : "2px solid #FFFFFF"};
   }

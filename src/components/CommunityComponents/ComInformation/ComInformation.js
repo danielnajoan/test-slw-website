@@ -19,7 +19,7 @@ const ComInformation = ({ headline, buttonLabel1, buttonLabel2 }) => {
           </Wrapper>
           <Row>
             <Column colPosition={true}>
-              <ButtonLink to="/contact-us">
+              <ButtonLink smooth to="/contact-us#">
                 <Button9
                   primary={true}
                   colLabel={true}
@@ -32,7 +32,7 @@ const ComInformation = ({ headline, buttonLabel1, buttonLabel2 }) => {
               </ButtonLink>
             </Column>
             <Column colPosition={false}>
-              <ButtonLink to="/contact-us">
+              <ButtonLink smooth to="/contact-us#">
                 <Button9
                   primary={false}
                   colLabel={false}

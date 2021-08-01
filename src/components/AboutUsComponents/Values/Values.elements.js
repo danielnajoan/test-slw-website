@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BaseSection = styled.div`
-  padding: 100px 0;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -9,7 +9,6 @@ export const BaseSection = styled.div`
   background: #fff2e7;
   border-radius: 300px 300px 0px 0px;
   @media screen and (max-width: 1024px) {
-    padding: 60px 0;
   }
 `;
 
@@ -39,6 +38,7 @@ export const UnderlineContainer = styled.div`
   justify-content: center;
   align-items: center;
   display: flex;
+  margin-bottom: 1rem;
 `;
 
 export const Underline = styled.div`
@@ -148,7 +148,7 @@ export const CardDesc = styled.p`
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 25px;
   letter-spacing: 0.01em;
   color: #091f6b;
@@ -158,20 +158,18 @@ export const CardDesc = styled.p`
     width: 80%;
   }
   @media screen and (max-width: 769px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   @media screen and (max-width: 541px) {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     width: 100%;
   }
   @media screen and (max-width: 415px) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 65%;
   }
   @media screen and (max-width: 321px) {
-    width: 70%;
-  }
-  @media screen and (max-width: 321px) {
+    font-size: 0.9rem;
     width: 70%;
   }
   @media screen and (max-width: 281px) {

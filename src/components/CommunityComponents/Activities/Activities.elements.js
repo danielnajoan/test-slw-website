@@ -49,7 +49,7 @@ export const Subheadline = styled.h2`
   line-height: 23px;
   letter-spacing: 0.01em;
   color: #091f6b;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
   @media screen and (max-width: 541px) {
     width: 100%;

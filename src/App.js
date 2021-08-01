@@ -10,12 +10,11 @@ import {
   Team,
 } from "./pages";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Navbar, Footer, ScrollToTop } from "./components";
+import { Navbar, Footer } from "./components";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <GlobalStyle />
       <Navbar />
       <Switch>

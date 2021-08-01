@@ -47,6 +47,7 @@ export const Headline = styled.h1`
 export const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-bottom: 2rem;
   @media screen and (max-width: 541px) {
     margin-bottom: 1rem;
@@ -134,7 +135,7 @@ export const CardParagraph = styled.p`
   font-style: normal;
   font-weight: ${({ parafWeight }) => (parafWeight ? "600" : "700")};
   font-size: 1.3rem;
-  line-height: 23px;
+  line-height: 27px;
   letter-spacing: 0.01em;
   color: #091f6b;
   margin-bottom: 1rem;

@@ -10,6 +10,7 @@ import {
 } from "./Activities.elements";
 
 const Activities = ({
+  className,
   headline,
   subheadline,
   cardHeadline,
@@ -20,7 +21,7 @@ const Activities = ({
   const [activitiesCards] = useState(activitiesData);
   return (
     <>
-      <BaseSection>
+      <BaseSection id={className}>
         <Container>
           <Headline>{headline}</Headline>
           <Subheadline>{subheadline}</Subheadline>

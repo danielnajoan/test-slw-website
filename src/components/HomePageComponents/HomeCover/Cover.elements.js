@@ -7,7 +7,7 @@ export const BaseSection = styled.div`
   background: url(${coverImg});
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 75%;
   border-radius: 0px 0px 80px 80px;
   height: 45rem;
   @media screen and (max-width: 1024px) {

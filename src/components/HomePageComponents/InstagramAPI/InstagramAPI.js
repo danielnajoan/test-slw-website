@@ -35,11 +35,8 @@ const InstagramAPI = ({
             <Underline></Underline>
           </UnderlineContainer>
           <CardContainer>
-            {/* {cards.map((instagramAPIData) => {
-              const {
-                id,
-                // instagramAPI
-              } = instagramAPIData;
+            {cards.map((instagramAPIData) => {
+              const { id, instagramAPI } = instagramAPIData;
               return (
                 <CardSection key={id}>
                   <CardInfo>
@@ -50,7 +47,7 @@ const InstagramAPI = ({
                   </CardInfo>
                 </CardSection>
               );
-            })} */}
+            })}
           </CardContainer>
           <ButtonWrapper>
             <ButtonRedirect href={urlButton}>
