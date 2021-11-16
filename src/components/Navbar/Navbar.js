@@ -33,6 +33,11 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
+                <NavLinks smooth to="/#" onClick={closeMobileMenu}>
+                  Home
+                </NavLinks>
+              </NavItem>
+              <NavItem>
                 <NavLinks smooth to="/about-us#" onClick={closeMobileMenu}>
                   About Us
                 </NavLinks>

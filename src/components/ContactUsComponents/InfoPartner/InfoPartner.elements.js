@@ -65,7 +65,7 @@ export const Paragraph = styled.p`
   font-size: 1.4rem;
   line-height: 34px;
   color: #091f6b;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   @media screen and (max-width: 541px) {
     font-size: 1.2rem;
   }
@@ -92,7 +92,6 @@ export const ButtonHeadline = styled.h2`
   line-height: 34px;
   color: #3858cc;
   letter-spacing: 0.02em;
-  margin-top: 3rem;
   margin-bottom: 1rem;
   @media screen and (max-width: 541px) {
     font-size: 1.3rem;
