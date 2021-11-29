@@ -80,17 +80,14 @@ export const Subheadline = styled.h2`
     font-size: 1rem;
   }
   @media screen and (max-width: 415px) {
-    font-size: 0.9rem;
     margin-bottom: 1rem;
   }
   @media screen and (max-width: 376px) {
-    font-size: 0.8rem;
   }
   @media screen and (max-width: 321px) {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     line-height: 21px;
   }
   @media screen and (max-width: 281px) {
-    font-size: 0.6rem;
   }
 `;

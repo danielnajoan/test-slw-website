@@ -178,17 +178,17 @@ export const CardText = styled.p`
     font-size: 0.9rem;
   }
   @media screen and (max-width: 415px) {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
   }
   @media screen and (max-width: 376px) {
-    font-size: 0.7rem;
+    /* font-size: 0.7rem; */
   }
   @media screen and (max-width: 321px) {
-    height: 3rem;
-    font-size: 0.6rem;
+    height: 6rem;
+    /* font-size: 0.6rem; */
   }
   @media screen and (max-width: 281px) {
-    font-size: 0.5rem;
+    /* font-size: 0.5rem; */
   }
 `;
 
